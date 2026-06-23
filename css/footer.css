@@ -1,0 +1,274 @@
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#1187c9;
+    color:#fff;
+    padding:50px 6% 15px;
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+    gap:35px;
+    align-items:flex-start;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand img{
+    width:180px;
+    
+    display:block;
+    margin-bottom:30px;
+    margin-top: 30px;
+    height: 100px;
+}
+
+.footer-brand p{
+    color:#d1d5db;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:18px;
+    max-width:280px;
+    font-weight:500;
+}
+
+/* =========================
+   SOCIAL
+========================= */
+
+.footer-social{
+    display:flex;
+    gap:12px;
+}
+
+.footer-social a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#111827;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:white;
+    color:#1187c9;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.footer-links h3{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:16px;
+    color:#fff;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links a{
+    display:block;
+    text-decoration:none;
+    color:#d1d5db;
+    font-size:15px;
+    font-weight:500;
+    margin-bottom:10px;
+    line-height:1.5;
+    transition:.3s;
+    transform-origin:left center;
+}
+
+.footer-links a:hover{
+    color:black;
+    transform:translateX(6px) scale(1.10);
+}
+
+.footer-links p{
+    color:#d1d5db;
+    font-size:15px;
+    font-weight:500;
+    margin-bottom:10px;
+    line-height:1.5;
+    transition:all .3s ease;
+    cursor:pointer;
+}
+.footer-links p:hover{
+    color:black;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:14px;
+}
+
+.contact-item i{
+    color:black;
+    font-size:18px;
+    min-width:18px;
+    margin-top:4px;
+}
+
+.contact-item a{
+    color:#d1d5db;
+    transition:all .3s ease;
+    transform-origin:left center;
+}
+
+.contact-item a:hover{
+    transform:scale(1.09);
+    color:#000000;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copy{
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:25px;
+    padding-top:15px;
+    text-align:center;
+    color:#d1d5db;
+    font-size:14px;
+    font-weight:500;
+}
+
+.copy a{
+    color:black;
+    text-decoration:none;
+}
+
+.copy a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:991px){
+
+    footer{
+        padding:40px 25px 15px;
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+   
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    html,
+    body{
+        overflow-x:hidden;
+    }
+
+    footer{
+        padding:35px 20px 15px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .footer-brand img{
+        width:140px;
+        margin-bottom:8px;
+    }
+
+    .footer-brand p{
+        margin-bottom:15px;
+        max-width:100%;
+    }
+
+    .footer-links h3{
+        margin-bottom:12px;
+    }
+
+    .footer-links a,
+    .footer-links p{
+        margin-bottom:8px;
+    }
+
+    .contact-item{
+        margin-bottom:10px;
+    }
+
+    .copy{
+        margin-top:20px;
+        padding-top:12px;
+        font-size:13px;
+    }
+    .footer-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+    }
+
+    .footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .footer-links:nth-child(2){
+        grid-column:1;
+    }
+
+    .footer-links:nth-child(3){
+        grid-column:2;
+    }
+
+    .footer-links:nth-child(4){
+        grid-column:1 / -1;
+    }
+
+        .copy{
+        font-size:12px;
+        line-height:1.6;
+    }
+
+    .copy a{
+        display:block;
+        margin-top:4px;
+        white-space:nowrap;
+    }
+
+}
+
+/* Extra protection against horizontal scroll */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x:hidden;
+}

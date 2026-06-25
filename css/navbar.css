@@ -70,6 +70,50 @@ color:#fff;
 transform:scale(1.1);
 }
 
+.auth-buttons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-left:20px;
+}
+
+.auth-buttons a{
+    min-width:100px;
+    height:38px;
+    padding:0 20px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    white-space:nowrap;
+}
+
+.login-btn{
+    background:#fff;
+    color:#008ad0;
+    border:1px solid #fff;
+}
+
+.login-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+.signup-btn{
+    background:#fff;
+    color:#008ad0;
+    border:1px solid #fff;
+}
+
+.signup-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
 /* NAVBAR */
 
 .navbar-area{
@@ -454,6 +498,39 @@ color:#008ad0;
 .mobile-social a:nth-child(4){
     background:#1da1f2;
 }
+
+.mobile-auth{
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+
+.mobile-auth a{
+    text-decoration:none;
+    text-align:center;
+    padding:12px;
+    border-radius:5px;
+    font-weight:600;
+    display:block;
+}
+
+.mobile-login{
+    background:#f2f2f2;
+    color:#333;
+}
+
+.mobile-signup{
+    background:#008ad0;
+    color:#fff;
+}
+
+.mobile-signup:hover{
+    background:#006fa8;
+}
+
+
+
 /* RESPONSIVE */
 
 @media(max-width:991px){

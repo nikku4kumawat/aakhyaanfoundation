@@ -1,112 +1,163 @@
-
- /* =========================
-   IMPACT SECTION START
+/* =========================
+   IMPACT SECTION NEW DESIGN
 ========================= */
 
 .impact-section{
-    width:100%;
-    background:ghostwhite;
-    padding:70px 15px;
-    overflow:hidden;
+    position: relative;
+    margin-top: -100px; 
+    z-index: 99;
+
+    padding: 0 15px 70px;
+    background: transparent;
 }
 
 .impact-container{
-    max-width:1200px;
-    margin:auto;
+    max-width: 1200px;
+    margin: auto;
 
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 
-    gap:25px;
+    overflow: hidden;
+    border-radius: 0;
 
-    padding:0 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.18);
 }
 
 /* CARD */
 
 .impact-card{
-    background:#0b8dd6;
+    min-height: 260px;
 
-    border-radius:18px;
+    padding: 35px 25px;
 
-    padding:25px 15px;
+    text-align: center;
 
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    min-height:220px;
+    opacity: 0;
+    transform: translateY(60px);
 
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
-
-    opacity:0;
-    transform:scale(.8);
-
-    transition:
-    transform .4s ease,
-    box-shadow .4s ease,
-    opacity .6s ease;
+    transition: all .7s ease;
 }
 
-/* Scroll Animation */
+/* Different Blue Shades */
+
+.impact-card:nth-child(1){
+    background:#005eff;
+}
+
+.impact-card:nth-child(2){
+    background:#1976ff;
+}
+
+.impact-card:nth-child(3){
+    background:#3489ff;
+}
+
+.impact-card:nth-child(4){
+    background:#5ba5ff;
+}
+
+/* Animation */
 
 .impact-card.show{
     opacity:1;
-    transform:scale(1);
+    transform:translateY(0);
 }
 
-/* Hover Effect */
-
-.impact-card:hover{
-    transform:translateY(-12px) scale(1.03);
-    box-shadow:0 15px 30px rgba(0,0,0,.18);
-}
-
-/* Icon */
+/* ICON */
 
 .impact-card img{
-    width:55px;
-    height:55px;
+    width:65px;
+    height:65px;
 
     object-fit:contain;
 
-    margin-bottom:15px;
+    margin:0 auto 20px;
 }
 
-/* Number */
+/* NUMBER */
 
 .impact-card h3{
     color:#fff;
 
-    font-size:30px;
+    font-size:48px;
     font-weight:800;
 
     margin-bottom:10px;
 
-    line-height:1.2;
+    line-height:1.1;
 }
 
-/* Text */
+/* TEXT */
 
 .impact-card p{
     color:#fff;
 
-    font-size:18px;
+    font-size:24px;
     font-weight:600;
 
     margin:0;
 }
 
-/* TABLET */
+/* =========================
+   TABLET
+========================= */
 
 @media(max-width:992px){
 
+    .impact-section{
+        margin-top:-80px;
+    }
+
     .impact-container{
         grid-template-columns:repeat(2,1fr);
-        gap:20px;
     }
 
     .impact-card{
-        min-height:190px;
-        padding:22px 12px;
+        min-height:220px;
+    }
+
+    .impact-card h3{
+        font-size:38px;
+    }
+
+    .impact-card p{
+        font-size:20px;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:576px){
+
+    .impact-section{
+        margin-top:-50px;
+        padding:0 15px 50px;
+    }
+
+    .impact-container{
+
+        grid-template-columns:1fr;
+
+        border-radius:20px;
+
+        gap:0;
+    }
+
+    .impact-card{
+
+        min-height:180px;
+
+        padding:30px 20px;
+
+        opacity:1 !important;
+        transform:none !important;
     }
 
     .impact-card img{
@@ -115,89 +166,29 @@
     }
 
     .impact-card h3{
-        font-size:26px;
+        font-size:32px;
     }
 
     .impact-card p{
-        font-size:17px;
+        font-size:18px;
     }
 }
 
-/* MOBILE */
-
-@media(max-width:576px){
-
-    .impact-section{
-        padding:50px 10px;
-    }
-
-    .impact-container{
-        grid-template-columns:repeat(2,1fr);
-
-        gap:12px;
-
-        padding:0;
-    }
-
-    .impact-card{
-        opacity:1 !important;
-        transform:scale(1) !important;
-    }
-
-    .impact-card.show{
-        opacity:1 !important;
-        transform:scale(1) !important;
-    }
-
-    .impact-card:hover{
-        transform:scale(1.05) !important;
-        box-shadow:0 15px 30px rgba(0,0,0,.18);
-    }
-
-    .impact-card img{
-        width:38px;
-        height:38px;
-        margin-bottom:10px;
-    }
-
-    .impact-card h3{
-        font-size:22px;
-        margin-bottom:5px;
-    }
-
-    .impact-card p{
-        font-size:14px;
-    }
-
-    .impact-card:hover{
-        transform:translateY(-8px) scale(1.02);
-    }
-}
-
-/* SMALL MOBILE */
+/* =========================
+   SMALL MOBILE
+========================= */
 
 @media(max-width:380px){
 
     .impact-card{
-        min-height:145px;
-        padding:15px 5px;
+        min-height:160px;
     }
 
     .impact-card h3{
-        font-size:20px;
+        font-size:28px;
     }
 
     .impact-card p{
-        font-size:13px;
-    }
-
-    .impact-card img{
-        width:35px;
-        height:35px;
+        font-size:16px;
     }
 }
-
- /* =========================
-   IMPACT SECTION END
-========================= */
-

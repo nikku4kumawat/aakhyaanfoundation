@@ -1,0 +1,203 @@
+
+ /* =========================
+   IMPACT SECTION START
+========================= */
+
+.impact-section{
+    width:100%;
+    background:ghostwhite;
+    padding:70px 15px;
+    overflow:hidden;
+}
+
+.impact-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    padding:0 15px;
+}
+
+/* CARD */
+
+.impact-card{
+    background:#0b8dd6;
+
+    border-radius:18px;
+
+    padding:25px 15px;
+
+    text-align:center;
+
+    min-height:220px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    opacity:0;
+    transform:scale(.8);
+
+    transition:
+    transform .4s ease,
+    box-shadow .4s ease,
+    opacity .6s ease;
+}
+
+/* Scroll Animation */
+
+.impact-card.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* Hover Effect */
+
+.impact-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+}
+
+/* Icon */
+
+.impact-card img{
+    width:55px;
+    height:55px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+}
+
+/* Number */
+
+.impact-card h3{
+    color:#fff;
+
+    font-size:30px;
+    font-weight:800;
+
+    margin-bottom:10px;
+
+    line-height:1.2;
+}
+
+/* Text */
+
+.impact-card p{
+    color:#fff;
+
+    font-size:18px;
+    font-weight:600;
+
+    margin:0;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .impact-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .impact-card{
+        min-height:190px;
+        padding:22px 12px;
+    }
+
+    .impact-card img{
+        width:50px;
+        height:50px;
+    }
+
+    .impact-card h3{
+        font-size:26px;
+    }
+
+    .impact-card p{
+        font-size:17px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:576px){
+
+    .impact-section{
+        padding:50px 10px;
+    }
+
+    .impact-container{
+        grid-template-columns:repeat(2,1fr);
+
+        gap:12px;
+
+        padding:0;
+    }
+
+    .impact-card{
+        opacity:1 !important;
+        transform:scale(1) !important;
+    }
+
+    .impact-card.show{
+        opacity:1 !important;
+        transform:scale(1) !important;
+    }
+
+    .impact-card:hover{
+        transform:scale(1.05) !important;
+        box-shadow:0 15px 30px rgba(0,0,0,.18);
+    }
+
+    .impact-card img{
+        width:38px;
+        height:38px;
+        margin-bottom:10px;
+    }
+
+    .impact-card h3{
+        font-size:22px;
+        margin-bottom:5px;
+    }
+
+    .impact-card p{
+        font-size:14px;
+    }
+
+    .impact-card:hover{
+        transform:translateY(-8px) scale(1.02);
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:380px){
+
+    .impact-card{
+        min-height:145px;
+        padding:15px 5px;
+    }
+
+    .impact-card h3{
+        font-size:20px;
+    }
+
+    .impact-card p{
+        font-size:13px;
+    }
+
+    .impact-card img{
+        width:35px;
+        height:35px;
+    }
+}
+
+ /* =========================
+   IMPACT SECTION END
+========================= */
+

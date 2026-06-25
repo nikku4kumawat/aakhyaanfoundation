@@ -456,6 +456,17 @@ color:#008ad0;
     min-width:18px;
 }
 
+.mobile-help a{
+    display:block;
+    text-align:center;
+    padding:12px;
+    border-radius:5px;
+    font-weight:600;
+    background:#008ad0;
+    color:#fff !important;
+    text-decoration:none;
+}
+
 /* Social Icons */
 
 .mobile-social{

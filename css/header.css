@@ -397,22 +397,35 @@ color:#008ad0;
     color:#333;
 }
 
-/* Helping Button */
+/* MOBILE DONATE BUTTON */
 
-.mobile-help{
+.mobile-donate{
     padding:20px !important;
     border:none !important;
+    text-align:center;
 }
 
-.mobile-help a{
-    display:block !important;
+.mobile-donate a{
+    display:inline-block;
+    width:160px; 
     background:#008ad0;
     color:#fff !important;
     text-align:center;
-    padding:14px;
+    padding:15px;
     border-radius:5px;
+    font-size:15px;
     font-weight:700;
+    text-decoration:none;
+    border:2px solid #008ad0;
+    transition:.3s;
 }
+
+.mobile-donate a:hover{
+    background:#fff;
+    color:#008ad0 !important;
+    box-shadow:0 0 15px rgba(0,138,208,.45);
+}
+
 
 /* Overlay */
 

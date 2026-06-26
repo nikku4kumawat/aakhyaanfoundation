@@ -232,7 +232,7 @@ header.innerHTML += `
         <!-- Donate Button -->
         <div class="help-btn">
 
-            <a href="#">
+            <a href="donate.html">
                 Donate Now
             </a>
 
@@ -399,6 +399,15 @@ header.innerHTML += `
             <a href="contact.html">CONTACT US</a>
         </li>
 
+
+        <!-- MOBILE DONATE BUTTON -->
+        <li class="mobile-donate">
+           <a href="donate.html">
+               Donate Now
+           </a>
+       </li>
+
+       
         <div class="mobile-contact-info">
 
             <div class="contact-item">

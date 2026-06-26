@@ -111,7 +111,7 @@ header.innerHTML += `
 
                     <ul class="submenu">
 
-                        <li><a href="overriww.html">OVERVIEW</a></li>
+                        <li><a href="overview.html">OVERVIEW</a></li>
                         <li><a href="mission.html">MISSION & VISION</a></li>
                         <li><a href="value.html">VALUES</a></li>
                         <li><a href="advisory.html">ADVISORY BOARD</a></li>
@@ -186,6 +186,7 @@ header.innerHTML += `
 
                     <ul class="submenu">
 
+                        <li><a href="upcomingevent.html">Upcoming Event</a></li>
                         <li><a href="report.html">REPORT</a></li>
                         <li><a href="audit.html">AUDIT</a></li>
                         <li><a href="child-protection-policy.html">CHILD PROTECTION POLICY</a></li>
@@ -214,7 +215,7 @@ header.innerHTML += `
                         <li><a href="press-coverage.html">PRESS COVERAGE</a></li>
                         <li><a href="journaling.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
                         <li><a href="research.html">RESEARCH & EVIDENCE</a></li>
-                        <li><a href="glimpses.html">GLIMPSES</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
 
                     </ul>
 
@@ -285,7 +286,7 @@ header.innerHTML += `
 
             <ul class="mobile-submenu">
 
-                <li><a href="overriww.html">OVERVIEW</a></li>
+                <li><a href="overview.html">OVERVIEW</a></li>
                 <li><a href="mission.html">MISSION & VISION</a></li>
                 <li><a href="value.html">VALUES</a></li>
                 <li><a href="advisory.html">ADVISORY BOARD</a></li>
@@ -359,7 +360,8 @@ header.innerHTML += `
             </div>
 
             <ul class="mobile-submenu">
-
+     
+                <li><a href="upcomingevent.html">Upcoming Event</a></li>
                 <li><a href="report.html">REPORT</a></li>
                 <li><a href="audit.html">AUDIT</a></li>
                 <li><a href="child-protection-policy.html">CHILD PROTECTION POLICY</a></li>
@@ -388,7 +390,7 @@ header.innerHTML += `
                 <li><a href="press-coverage.html">PRESS COVERAGE</a></li>
                 <li><a href="journaling.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
                 <li><a href="research.html">RESEARCH & EVIDENCE</a></li>
-                <li><a href="glimpses.html">GLIMPSES</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
 
             </ul>
 

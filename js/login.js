@@ -148,3 +148,17 @@ function closeAuthPopup() {
   const modal = document.getElementById("authModal");
   if (modal) modal.remove();
 }
+
+
+// ===============================
+// LOGIN BUTTON EVENTS
+// ===============================
+
+document.addEventListener("click", function (e) {
+
+  if (e.target.closest("#loginBtn") || e.target.closest("#mobileLoginBtn")) {
+    e.preventDefault();
+    openLoginPopup();
+  }
+
+});

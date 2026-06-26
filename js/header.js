@@ -50,18 +50,15 @@ header.innerHTML = `
             </a>
 
             <div class="auth-buttons">
-
-                <a href="login.html" class="login-btn">
-                    <i class="fas fa-sign-in-alt"></i>
+               <a href="javascript:void(0)" id="loginBtn" class="login-btn">
+                 <i class="fas fa-sign-in-alt"></i>
                     Login
-                </a>
-
-                <a href="signup.html" class="signup-btn">
+               </a>
+               <a href="javascript:void(0)" id="signupBtn" class="signup-btn">
                     <i class="fas fa-user-plus"></i>
                     Sign Up
-                </a>
-
-            </div>
+               </a>
+           </div>
 
         </div>
 
@@ -447,18 +444,15 @@ header.innerHTML += `
 
             </div>
 
-            <div class="mobile-auth">
-
-                <a href="login.html" class="mobile-login">
-                    <i class="fas fa-sign-in-alt"></i>
-                    Login
-                </a>
-
-                <a href="signup.html" class="mobile-signup">
-                    <i class="fas fa-user-plus"></i>
-                    Sign Up
-                </a>
-
+           <div class="mobile-auth">
+              <a href="javascript:void(0)" id="mobileLoginBtn" class="mobile-login">
+                  <i class="fas fa-sign-in-alt"></i>
+                   Login
+              </a>
+              <a href="javascript:void(0)" id="mobileSignupBtn" class="mobile-signup">
+                  <i class="fas fa-user-plus"></i>
+                   Sign Up
+              </a>
             </div>
 
         </div>
@@ -470,3 +464,5 @@ header.innerHTML += `
 <div class="overlay" id="overlay"></div>
 
 `;
+
+

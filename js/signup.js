@@ -204,6 +204,10 @@ function openSignupPopup() {
 
       setTimeout(() => {
         closeAuthPopup();
+            if (window.afterAuthSuccess) {
+    window.afterAuthSuccess();
+    window.afterAuthSuccess = null;
+  }
       }, 800);
 
     } catch (error) {

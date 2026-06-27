@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Aakhyaan Foundation</title>
+
+    <!-- Font Awesome -->
+     <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/floating.css">
+    <link rel="stylesheet" href="css/upcomingevent.css">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+
+  <section class="event-hero">
+    <div class="event-overlay"></div>
+
+    <div class="event-hero-content">
+      <p class="event-label">Upcoming Event</p>
+
+      <div class="moving-wrapper">
+        <div class="moving-track" id="headlineMarquee">
+          No upcoming event added yet
+        </div>
+      </div>
+
+      <div class="moving-wrapper location-moving">
+        <div class="moving-track slow" id="locationMarquee">
+          Location will appear here
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-admin-section">
+    <div class="event-container">
+
+      <div class="admin-left admin-card">
+        <h2>Event Details</h2>
+        <p>Location, phone number aur email yahan se add/save/delete kar sakte ho.</p>
+
+        <div class="detail-box">
+          <label>Event Location</label>
+          <div class="input-action">
+            <textarea id="locationInput" placeholder="Enter event location"></textarea>
+            <button id="locationBtn" class="action-btn save">
+              <i class="fa-solid fa-floppy-disk"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="detail-box">
+          <label>Phone Number</label>
+          <div class="input-action">
+            <input type="text" id="phoneInput" placeholder="Enter phone number">
+            <button id="phoneBtn" class="action-btn save">
+              <i class="fa-solid fa-floppy-disk"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="detail-box">
+          <label>Email Address</label>
+          <div class="input-action">
+            <input type="email" id="emailInput" placeholder="Enter email address">
+            <button id="emailBtn" class="action-btn save">
+              <i class="fa-solid fa-floppy-disk"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-right admin-card">
+        <div class="right-head">
+          <div>
+            <h2>Event Headlines</h2>
+            <p>Add multiple upcoming event headlines.</p>
+          </div>
+
+          <button class="add-event-btn" id="addEventBtn">
+            <i class="fa-solid fa-plus"></i>
+            Add Event
+          </button>
+        </div>
+
+        <div class="event-list" id="eventList"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+<div id="footer"></div>
+<div id="floating-icons"></div>
+
+    <!-- JS -->
+    <script src="js/header.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/floating.js"></script>
+    <script src="js/upcomingevent.js"></script>
+
+
+</body>
+
+</html>

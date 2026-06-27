@@ -1,0 +1,547 @@
+/*=========================================
+        CORE VALUES SECTION
+=========================================*/
+
+.core-values-section{
+    position:relative;
+    padding:100px 0;
+    background:linear-gradient(180deg,#f4fbff,#ffffff);
+    overflow:hidden;
+}
+
+.core-values-section::before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#0d8ce915;
+    border-radius:50%;
+    top:-120px;
+    left:-120px;
+}
+
+.core-values-section::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#0d8ce910;
+    border-radius:50%;
+    bottom:-120px;
+    right:-100px;
+}
+
+.cv-container{
+    width:92%;
+    max-width:1300px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+/*==========================
+      HEADING
+==========================*/
+
+.cv-heading{
+    text-align:center;
+    margin-bottom:70px;
+    opacity:0;
+    transform:translateY(50px);
+}
+
+.cv-tag{
+    display:inline-block;
+    background:#0d8ce915;
+    color:#0d8ce9;
+    padding:10px 24px;
+    border-radius:40px;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:20px;
+    letter-spacing:.5px;
+}
+
+.cv-heading h2{
+    font-size:48px;
+    color:#16355d;
+    font-weight:700;
+    margin-bottom:25px;
+    line-height:1.2;
+}
+
+.cv-heading p{
+    max-width:820px;
+    margin:auto;
+    color:#666;
+    font-size:18px;
+    line-height:32px;
+}
+
+/*==========================
+        GRID
+==========================*/
+
+.cv-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
+}
+
+/*==========================
+       CARD
+==========================*/
+
+.cv-card{
+    background:#fff;
+    border-radius:25px;
+    padding:40px 30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    transition:.45s;
+    border:1px solid #e8f4ff;
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+}
+
+.cv-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:6px;
+    background:linear-gradient(90deg,#0d8ce9,#27b5ff);
+}
+
+.cv-card::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:#0d8ce908;
+    border-radius:50%;
+    right:-90px;
+    bottom:-90px;
+    transition:.5s;
+}
+
+/*==========================
+        ICON
+==========================*/
+
+.cv-icon{
+    width:90px;
+    height:90px;
+    margin:auto;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0d8ce9,#33c3ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:36px;
+    margin-bottom:28px;
+    box-shadow:0 15px 30px rgba(13,140,233,.28);
+    transition:.5s;
+}
+
+/*==========================
+      TITLE
+==========================*/
+
+.cv-card h3{
+    font-size:28px;
+    color:#16355d;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+/*==========================
+      PARAGRAPH
+==========================*/
+
+.cv-card p{
+    color:#666;
+    line-height:30px;
+    font-size:16px;
+}
+
+/*==========================
+     INITIAL ANIMATION
+==========================*/
+
+.cv-card{
+    opacity:0;
+    transform:translateY(70px);
+}
+
+/*=========================================
+        CARD HOVER EFFECT
+=========================================*/
+
+.cv-card:hover{
+    transform:translateY(-18px);
+    box-shadow:0 28px 60px rgba(13,140,233,.18);
+    border-color:#0d8ce9;
+}
+
+.cv-card:hover::after{
+    transform:scale(1.4);
+    background:#0d8ce915;
+}
+
+.cv-card:hover .cv-icon{
+    transform:rotateY(360deg) scale(1.08);
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(13,140,233,.35);
+}
+
+.cv-card:hover h3{
+    color:#0d8ce9;
+}
+
+.cv-card:hover p{
+    color:#444;
+}
+
+/*=========================================
+      GLOW BORDER EFFECT
+=========================================*/
+
+.cv-card::before{
+    transition:.4s;
+}
+
+.cv-card:hover::before{
+    height:100%;
+    opacity:.05;
+}
+
+/*=========================================
+        ICON ANIMATION
+=========================================*/
+
+.cv-icon i{
+    transition:.6s;
+}
+
+.cv-card:hover .cv-icon i{
+    transform:scale(1.2) rotate(10deg);
+}
+
+/*=========================================
+        HEADING ANIMATION
+=========================================*/
+
+.cv-heading.show{
+    opacity:1;
+    transform:translateY(0);
+    transition:1s ease;
+}
+
+/*=========================================
+        CARD ANIMATION
+=========================================*/
+
+.cv-card.show{
+    opacity:1;
+    transform:translateY(0);
+    transition:.8s ease;
+}
+
+.cv-card:nth-child(2){
+    transition-delay:.15s;
+}
+
+.cv-card:nth-child(3){
+    transition-delay:.3s;
+}
+
+.cv-card:nth-child(4){
+    transition-delay:.45s;
+}
+
+.cv-card:nth-child(5){
+    transition-delay:.6s;
+}
+
+/*=========================================
+      FLOATING EFFECT
+=========================================*/
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.cv-icon{
+    animation:floating 4s ease-in-out infinite;
+}
+
+/*=========================================
+      SECTION BACKGROUND MOTION
+=========================================*/
+
+@keyframes circleMove{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(35px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.core-values-section::before{
+    animation:circleMove 10s linear infinite;
+}
+
+.core-values-section::after{
+    animation:circleMove 12s linear infinite reverse;
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media(max-width:991px){
+
+.cv-heading h2{
+
+    font-size:38px;
+
+}
+
+.cv-heading p{
+
+    font-size:17px;
+    line-height:30px;
+
+}
+
+.cv-grid{
+
+    gap:25px;
+
+}
+
+.cv-card{
+
+    padding:35px 25px;
+
+}
+
+.cv-card h3{
+
+    font-size:25px;
+
+}
+
+.cv-icon{
+
+    width:80px;
+    height:80px;
+    font-size:30px;
+
+}
+
+}
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media(max-width:768px){
+
+.core-values-section{
+
+    padding:80px 0;
+
+}
+
+.cv-heading{
+
+    margin-bottom:55px;
+
+}
+
+.cv-heading h2{
+
+    font-size:34px;
+
+}
+
+.cv-heading p{
+
+    font-size:16px;
+    line-height:29px;
+
+}
+
+.cv-grid{
+
+    grid-template-columns:1fr;
+    gap:22px;
+
+}
+
+.cv-card{
+
+    padding:32px 25px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media(max-width:576px){
+
+.core-values-section{
+
+    padding:70px 0;
+
+}
+
+.cv-tag{
+
+    font-size:13px;
+    padding:8px 18px;
+
+}
+
+.cv-heading h2{
+
+    font-size:30px;
+
+}
+
+.cv-heading p{
+
+    font-size:15px;
+    line-height:28px;
+
+}
+
+.cv-card{
+
+    border-radius:20px;
+    padding:30px 22px;
+
+}
+
+.cv-card h3{
+
+    font-size:23px;
+
+}
+
+.cv-card p{
+
+    font-size:15px;
+    line-height:28px;
+
+}
+
+.cv-icon{
+
+    width:75px;
+    height:75px;
+    font-size:28px;
+
+}
+
+}
+
+/*=========================================
+      SMALL MOBILE
+=========================================*/
+
+@media(max-width:400px){
+
+.cv-heading h2{
+
+    font-size:26px;
+
+}
+
+.cv-card{
+
+    padding:28px 20px;
+
+}
+
+.cv-card h3{
+
+    font-size:21px;
+
+}
+
+.cv-card p{
+
+    font-size:14px;
+
+}
+
+.cv-icon{
+
+    width:70px;
+    height:70px;
+    font-size:26px;
+
+}
+
+}
+
+
+/*==========================
+      ICON PULSE
+==========================*/
+
+.pulse{
+
+    animation:iconPulse .7s ease;
+
+}
+
+@keyframes iconPulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}

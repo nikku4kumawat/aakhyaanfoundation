@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <h3>Our Services</h3>
 
-            <a href="../servicespages/gst-registration.html">Overview</a>
-            <a href="../servicespages/income-tax-return-filing.html">Vision & Mission</a>
+            <a href="overview.html">Overview</a>
+            <a href="mission.html">Vision & Mission</a>
             <a href="../servicespages/company-incorporation.html">Values </a>
             <a href="../servicespages/statutory-audit.html">Board Of Directors</a>
             <a href="../servicespages/business-entity-registration.html">Advisory Board</a>

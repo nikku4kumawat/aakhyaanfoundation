@@ -59,3 +59,21 @@ document.querySelectorAll(".mobile-dropdown .mobile-link").forEach(link => {
 });
 
 
+
+/* Close Mobile Menu when Login / Signup Popup Opens */
+
+const mobileLoginBtn = document.getElementById("mobileLoginBtn");
+const mobileSignupBtn = document.getElementById("mobileSignupBtn");
+
+if (mobileLoginBtn) {
+    mobileLoginBtn.addEventListener("click", function () {
+        closeMobileMenu();
+    });
+}
+
+if (mobileSignupBtn) {
+    mobileSignupBtn.addEventListener("click", function () {
+        closeMobileMenu();
+    });
+}
+

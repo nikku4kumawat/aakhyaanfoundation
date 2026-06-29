@@ -12,7 +12,8 @@
 
     <!-- Font Awesome -->
      <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/header.css">
@@ -21,7 +22,7 @@
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
-    <link rel="stylesheet" href="./css/press-coverage.css">
+    <link rel="stylesheet" href="./css/blog.css">
 
 </head>
 
@@ -30,30 +31,28 @@
     <div id="header"></div>
 
 
-
-<section class="press-admin-section">
-    <div class="press-header">
-      <h1>Our Press Coverage</h1>
+<section class="blog-admin-section">
+    <div class="blog-header">
+      <h1>Our Blog</h1>
       <p>
-        Discover the latest news, media coverage, and stories highlighting 
-        Aakhyaan Foundation's commitment to empowering and supporting 
-        senior citizens with dignity and care.
+        Discover inspiring stories, impactful initiatives, community updates, 
+        and meaningful insights from Aakhyaan Foundation as we work to empower individuals,
+         support senior citizens, and build a more inclusive and compassionate society.
       </p>
     </div>
 
-    <div class="press-grid" id="pressGrid"></div>
+    <div class="blog-grid" id="blogGrid"></div>
 </section>
 
- <!-- hidden file input -->
-  <input type="file" id="pressFileInput" accept="image/*" hidden />
+  <input type="file" id="blogFileInput" accept="image/*" hidden />
 
-  <!-- image popup -->
-<div class="image-modal" id="imageModal">
-    <button class="modal-close" id="modalClose">
+  <div class="blog-image-modal" id="blogImageModal">
+    <button class="blog-modal-close" id="blogModalClose">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    <img id="modalImage" src="" alt="Press Coverage" />
-</div>
+    <img id="blogModalImage" src="" alt="Blog Image" />
+  </div>
+
 
 
 
@@ -68,12 +67,19 @@
     <script src="js/signup.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/floating.js"></script>
-    <script src="./js/press-coverage.js"></script>
+    <script src="./js/blog.js"></script>
 
 
 </body>
 
 </html>
+
+
+
+
+
+
+
 
 
 

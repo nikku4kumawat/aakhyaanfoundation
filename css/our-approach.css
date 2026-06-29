@@ -1,0 +1,637 @@
+/*=====================================================
+            OUR APPROACH SECTION
+======================================================*/
+
+.our-approach-section{
+    position:relative;
+    padding:40px 0;
+    background:whitesmoke;
+    overflow:hidden;
+}
+
+.our-approach-section .container{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:0 15px;
+}
+
+/*=====================================================
+            TOP SECTION
+======================================================*/
+
+.approach-wrapper{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    margin-bottom:80px;
+
+}
+
+
+/*=====================================================
+                LEFT IMAGE
+======================================================*/
+
+.approach-image{
+
+    position:relative;
+    flex:0 0 56%;
+
+}
+
+
+/* Blue Background */
+
+.image-bg{
+
+    position:absolute;
+    width:88%;
+    height:88%;
+    right:-25px;
+    bottom:-25px;
+    background:#dff2fd;
+    border-radius:30px;
+    z-index:1;
+
+}
+
+
+/* Main Image */
+
+.image-box{
+
+    position:relative;
+    z-index:5;
+    overflow:hidden;
+    border-radius:28px;
+    box-shadow:0 20px 45px rgba(17,135,201,.12);
+
+}
+
+.image-box img{
+
+    width:100%;
+    display:block;
+    border-radius:28px;
+
+}
+
+
+/* Dashed Circle */
+
+.circle-border{
+
+    position:absolute;
+    width:70px;
+    height:70px;
+    left:-28px;
+    top:-28px;
+    border:2px dashed #55aef0;
+    border-radius:50%;
+    z-index:10;
+    display: none;
+
+}
+
+
+/* Blue Dot */
+
+.circle-dot{
+
+    position:absolute;
+    right:45px;
+    top:-20px;
+    width:16px;
+    height:16px;
+    background:#1187c9;
+    border-radius:50%;
+    z-index:15;
+
+}
+
+
+
+/*=====================================================
+            RIGHT CONTENT
+======================================================*/
+
+.approach-content{
+    flex:0 0 44%;
+    padding-top:45px;  
+}
+
+.approach-content h2{
+
+    font-size:20px;
+    font-weight:700;
+    color:#1187c9;
+    margin-bottom:10px;
+    line-height:1.2;
+
+}
+
+
+/* Blue Line */
+
+.title-line{
+    width:55px;
+    height:4px;
+    background:#1187c9;
+    border-radius:30px;
+    margin-bottom:18px;
+}
+
+
+/* Paragraph */
+
+.approach-content p{
+    font-size:15px;
+    color:#4d5562;
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+.approach-content p:last-child{
+    margin-bottom:0;
+}
+
+
+/*=====================================================
+                OUR PILLARS
+======================================================*/
+
+.pillar-heading{
+
+    margin-bottom:45px;
+
+}
+
+.pillar-heading span{
+
+    color:#1187c9;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:3px;
+
+}
+
+.pillar-line{
+
+    width:65px;
+    height:4px;
+    background:#1187c9;
+    margin-top:14px;
+    border-radius:30px;
+
+}
+
+
+/*=====================================================
+                GRID
+======================================================*/
+
+.pillar-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+
+}
+
+
+
+/*=====================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:1100px){
+
+.approach-wrapper{
+
+    gap:45px;
+
+}
+
+.approach-content h2{
+
+    font-size:46px;
+
+}
+
+}
+
+
+@media(max-width:991px){
+
+.approach-wrapper{
+
+    flex-direction:column;
+
+}
+
+.approach-image,
+.approach-content{
+
+    flex:100%;
+    width:100%;
+
+}
+
+.approach-content{
+
+    margin-top:35px;
+    padding-top:35px;
+
+}
+
+.approach-content h2{
+
+    font-size:44px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.our-approach-section{
+
+    padding:70px 0;
+
+}
+
+.approach-content{
+
+    text-align:center;
+
+}
+
+.title-line{
+
+    margin:0 auto 25px;
+
+}
+
+.approach-content h2{
+
+    font-size:38px;
+
+}
+
+.approach-content p{
+
+    font-size:16px;
+    line-height:1.8;
+
+}
+
+.pillar-heading{
+
+    text-align:center;
+
+}
+
+.pillar-line{
+
+    margin:12px auto 0;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+.approach-content h2{
+
+    font-size:32px;
+
+}
+
+.circle-border{
+
+    width:55px;
+    height:55px;
+    left:-15px;
+    top:-15px;
+
+}
+
+.circle-dot{
+
+    width:12px;
+    height:12px;
+
+}
+
+.image-bg{
+
+    right:-15px;
+    bottom:-15px;
+
+}
+
+}
+
+/*=====================================================
+                OUR PILLARS CARD
+======================================================*/
+
+.pillar-card{
+    position: relative;
+    background:#fff;
+    padding:28px 22px;
+    border-radius:18px;
+    text-align:center;
+    border:1px solid #e6eef5;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transition:all .4s ease;
+    overflow:hidden;
+    height:100%;
+}
+
+.pillar-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:4px;
+    background:#1187c9;
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.4s;
+}
+
+.pillar-card:hover::before{
+    transform:scaleX(1);
+}
+
+.pillar-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(17,135,201,.18);
+}
+
+
+/*=====================================================
+                ICON
+======================================================*/
+
+.pillar-icon{
+
+    width:72px;
+    height:72px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#eef8fe;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.6s;
+    border:2px solid rgba(17,135,201,.12);
+
+}
+
+.pillar-icon i{
+
+    font-size:28px;
+    color:#1187c9;
+    transition:.6s;
+
+}
+
+.pillar-card:hover .pillar-icon{
+
+    background:#1187c9;
+    transform:rotateY(180deg);
+
+}
+
+.pillar-card:hover .pillar-icon i{
+
+    color:#fff;
+    transform:rotateY(-180deg);
+
+}
+
+
+/*=====================================================
+                TITLE
+======================================================*/
+
+.pillar-card h3{
+
+    font-size:20px;
+    font-weight:700;
+    color:#222;
+    margin-bottom:14px;
+    line-height:1.4;
+
+}
+
+
+/*=====================================================
+                DESCRIPTION
+======================================================*/
+
+.pillar-card p{
+
+    font-size:14px;
+    line-height:1.8;
+    color:#666;
+    margin:0;
+
+}
+
+
+/*=====================================================
+                CARD ANIMATION
+======================================================*/
+
+.pillar-card{
+
+    opacity:0;
+    transform:translateY(60px);
+
+}
+
+.pillar-card.active{
+
+    opacity:1;
+    transform:translateY(0);
+    transition:.8s;
+
+}
+
+.pillar-card:nth-child(2){
+
+    transition-delay:.2s;
+
+}
+
+.pillar-card:nth-child(3){
+
+    transition-delay:.4s;
+
+}
+
+.pillar-card:nth-child(4){
+
+    transition-delay:.6s;
+
+}
+
+
+/*=====================================================
+                IMAGE ANIMATION
+======================================================*/
+
+.approach-image{
+
+    opacity:0;
+    transform:translateX(-80px);
+    transition:1s ease;
+
+}
+
+.approach-image.active{
+
+    opacity:1;
+    transform:translateX(0);
+
+}
+
+
+/*=====================================================
+                CONTENT ANIMATION
+======================================================*/
+
+.approach-content{
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+
+}
+
+.approach-content.active{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+
+/*=====================================================
+                IMAGE HOVER
+======================================================*/
+
+.image-box{
+
+    transition:.5s;
+
+}
+
+.image-box:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.image-box img{
+
+    transition:.5s;
+
+}
+
+.image-box:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/*=====================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:991px){
+
+    .pillar-grid{
+
+        grid-template-columns:repeat(2,1fr);
+        gap:22px;
+
+    }
+
+}
+
+
+@media(max-width:767px){
+
+    .pillar-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .pillar-card{
+
+        padding:24px 18px;
+
+    }
+
+    .pillar-icon{
+
+        width:65px;
+        height:65px;
+
+    }
+
+    .pillar-icon i{
+
+        font-size:24px;
+
+    }
+
+    .pillar-card h3{
+
+        font-size:18px;
+
+    }
+
+    .pillar-card p{
+
+        font-size:13px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .pillar-card{
+
+        padding:22px 16px;
+
+    }
+
+    .pillar-icon{
+
+        width:60px;
+        height:60px;
+
+    }
+
+    .pillar-icon i{
+
+        font-size:22px;
+
+    }
+
+}

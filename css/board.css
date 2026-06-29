@@ -1,0 +1,740 @@
+/*====================================================
+            BOARD OF DIRECTORS SECTION
+====================================================*/
+
+.board-directors-section{
+    position: relative;
+    padding: 60px 0;
+    background: #f7f9fc;
+    overflow: hidden;
+}
+
+.board-directors-section .container{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/*====================================================
+                    HEADING
+====================================================*/
+
+.board-heading{
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 70px;
+    animation: zoomHeading 1s ease;
+}
+
+.board-heading h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1187c9;
+    margin-bottom: 18px;
+}
+
+.board-heading p{
+    color: #666;
+    font-size: 18px;
+    line-height: 31px;
+}
+
+
+/*====================================================
+                HEADING ANIMATION
+====================================================*/
+
+@keyframes zoomHeading{
+
+    from{
+
+        opacity:0;
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*====================================================
+                DIRECTOR GRID
+====================================================*/
+
+.director-wrapper{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+
+}
+
+
+/*====================================================
+                DIRECTOR CARD
+====================================================*/
+
+.director-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding:35px 28px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.45s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+    position:relative;
+
+}
+
+.director-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 22px 45px rgba(0,0,0,.15);
+
+}
+
+
+/*====================================================
+                DIRECTOR IMAGE
+====================================================*/
+
+.director-image{
+
+    width:170px;
+    height:170px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:6px solid #ffffff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    flex-shrink:0;
+
+}
+
+.director-image img{
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+
+/*====================================================
+                CONTENT
+====================================================*/
+
+.director-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+
+/*====================================================
+                NAME
+====================================================*/
+
+.director-content h3{
+
+    font-size:31px;
+
+    color:#000;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+
+/*====================================================
+            DESIGNATION BADGE
+====================================================*/
+
+.designation{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    align-self:center;
+
+    padding:9px 24px;
+
+    border-radius:50px;
+
+    background:#eaf3ff;
+
+    color:#1187c9;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    margin-bottom:24px;
+
+}
+
+
+/*====================================================
+                DIVIDER
+====================================================*/
+
+.director-divider{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.director-divider span{
+
+    width:72px;
+    height:2px;
+
+    background:#d9d9d9;
+
+    position:relative;
+
+}
+
+.director-divider span::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#1187c9;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+/*====================================================
+                DESCRIPTION
+====================================================*/
+
+.director-content p{
+
+    color:#666;
+    font-size:16px;
+    line-height:30px;
+
+    margin-bottom:20px;
+
+    flex:1;
+
+}
+
+
+/*====================================================
+                READ MORE BUTTON
+====================================================*/
+
+.read-more-btn{
+
+    border:none;
+    background:none;
+
+    color:#1187c9;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    margin-top:0;
+
+    align-self:center;
+
+}
+
+.read-more-btn:hover{
+
+    color:#111;
+
+    transform:translateX(6px);
+
+}
+
+
+/*====================================================
+                POPUP
+====================================================*/
+
+.director-popup{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.72);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:999999;
+
+}
+
+.director-popup.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+/*====================================================
+                POPUP BOX
+====================================================*/
+
+.popup-box{
+
+    width:100%;
+    max-width:760px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    position:relative;
+
+    text-align:center;
+
+    transform:scale(.8);
+
+    transition:.35s;
+
+    max-height:88vh;
+
+    overflow-y:auto;
+
+}
+
+.director-popup.active .popup-box{
+
+    transform:scale(1);
+
+}
+
+
+/*====================================================
+                CLOSE BUTTON
+====================================================*/
+
+.popup-close{
+
+    position:absolute;
+
+    right:20px;
+    top:20px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f3f3f3;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.popup-close:hover{
+
+    background:#1187c9;
+
+    color:#fff;
+
+    transform:rotate(90deg);
+
+}
+
+
+/*====================================================
+                POPUP IMAGE
+====================================================*/
+
+.popup-image{
+
+    width:180px;
+    height:180px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:6px solid #fff;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+    margin-bottom:25px;
+
+}
+
+.popup-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+/*====================================================
+                POPUP TITLE
+====================================================*/
+
+#popupName{
+
+    font-size:34px;
+
+    color:#1d3557;
+
+    margin-bottom:12px;
+
+}
+
+#popupDesignation{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    background:#eaf3ff;
+
+    color:#1187c9;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+
+/*====================================================
+                POPUP DIVIDER
+====================================================*/
+
+.popup-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+.popup-divider span{
+
+    width:80px;
+
+    height:2px;
+
+    background:#d9d9d9;
+
+    position:relative;
+
+}
+
+.popup-divider span::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#1187c9;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+
+/*====================================================
+                POPUP DESCRIPTION
+====================================================*/
+
+.popup-description p{
+
+    text-align:justify;
+
+    color:#555;
+
+    line-height:33px;
+
+    font-size:17px;
+
+}
+
+
+/*====================================================
+                POPUP SCROLLBAR
+====================================================*/
+
+.popup-box::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.popup-box::-webkit-scrollbar-thumb{
+
+    background:#1187c9;
+
+    border-radius:20px;
+
+}
+
+.popup-box::-webkit-scrollbar-track{
+
+    background:#ededed;
+
+}
+
+
+/*====================================================
+                RESPONSIVE
+====================================================*/
+
+@media(max-width:992px){
+
+    .director-wrapper{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .board-heading h2{
+
+        font-size:40px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .director-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .board-directors-section{
+
+        padding:70px 0;
+
+    }
+
+    .board-heading{
+
+        margin-bottom:45px;
+
+    }
+
+    .board-heading h2{
+
+        font-size:33px;
+
+    }
+
+    .board-heading p{
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .director-image{
+
+        width:145px;
+
+        height:145px;
+
+    }
+
+    .director-content h3{
+
+        font-size:25px;
+
+    }
+
+    .popup-box{
+
+        padding:28px;
+
+    }
+
+    .popup-image{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+    #popupName{
+
+        font-size:28px;
+
+    }
+
+    .popup-description p{
+
+        font-size:15px;
+
+        line-height:29px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .director-card{
+
+        padding:25px 20px;
+
+    }
+
+    .board-heading h2{
+
+        font-size:28px;
+
+    }
+
+    .director-image{
+
+        width:130px;
+
+        height:130px;
+
+    }
+
+    .director-content h3{
+
+        font-size:22px;
+
+    }
+
+    .designation{
+
+        font-size:14px;
+
+        padding:8px 20px;
+
+    }
+
+    .popup-close{
+
+        width:38px;
+
+        height:38px;
+
+        font-size:24px;
+
+    }
+
+}

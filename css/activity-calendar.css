@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+  color: #111827;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.activity-calendar-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 50px;
+}
+
+.activity-calendar-header {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.activity-calendar-header h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: #1187c9;
+}
+
+.activity-calendar-header p {
+  max-width: 720px;
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.activity-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.activity-calendar-card {
+  height: 300px;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.12);
+  cursor: pointer;
+}
+
+.activity-calendar-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+  transition: 0.35s ease;
+}
+
+.activity-calendar-card:hover img {
+  transform: scale(1.03);
+}
+
+.activity-calendar-loading,
+.activity-calendar-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 18px;
+  color: #64748b;
+  padding: 40px 0;
+}
+
+/* Modal */
+.activity-calendar-image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+  z-index: 9999;
+}
+
+.activity-calendar-image-modal.active {
+  display: flex;
+}
+
+.activity-calendar-image-modal img {
+  max-width: 95%;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #fff;
+  padding: 10px;
+}
+
+.activity-calendar-modal-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #111827;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .activity-calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .activity-calendar-section {
+    padding: 55px 25px;
+  }
+
+  .activity-calendar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activity-calendar-header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .activity-calendar-section {
+    padding: 45px 18px;
+  }
+
+  .activity-calendar-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .activity-calendar-header h1 {
+    font-size: 32px;
+  }
+
+  .activity-calendar-header p {
+    font-size: 16px;
+  }
+
+  .activity-calendar-card {
+    height: 260px;
+  }
+
+  .activity-calendar-image-modal {
+    padding: 20px;
+  }
+
+  .activity-calendar-modal-close {
+    top: 15px;
+    right: 15px;
+  }
+}

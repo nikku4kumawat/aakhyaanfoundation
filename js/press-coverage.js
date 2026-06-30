@@ -1,155 +1,88 @@
-const pressGrid = document.getElementById("pressGrid");
-const fileInput = document.getElementById("pressFileInput");
-const imageModal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
-const modalClose = document.getElementById("modalClose");
+const pressCoverageGrid = document.getElementById("pressCoverageGrid");
+const pressCoverageImageModal = document.getElementById("pressCoverageImageModal");
+const pressCoverageModalImage = document.getElementById("pressCoverageModalImage");
+const pressCoverageModalClose = document.getElementById("pressCoverageModalClose");
 
-let pressImages = JSON.parse(localStorage.getItem("pressCoverageImages")) || [];
-let selectedImage = null;
+async function fetchPressCoverageImages() {
+  try {
+    pressCoverageGrid.innerHTML = `
+      <p class="activity-calendar-loading">Loading press coverage...</p>
+    `;
 
-function renderPressImages() {
-  pressGrid.innerHTML = "";
+    const res = await fetch(API_PATHS.PRESS_COVERAGE);
+    const data = await res.json();
 
-  pressImages.forEach((image, index) => {
+    if (!res.ok) {
+      pressCoverageGrid.innerHTML = `
+        <p class="activity-calendar-empty">${data.message || "Press coverage images not found"}</p>
+      `;
+      return;
+    }
+
+    if (!data || data.length === 0) {
+      pressCoverageGrid.innerHTML = `
+        <p class="activity-calendar-empty">No press coverage images available.</p>
+      `;
+      return;
+    }
+
+    renderPressCoverageImages(data);
+
+  } catch (error) {
+    console.error("Press coverage fetch error:", error);
+    pressCoverageGrid.innerHTML = `
+      <p class="activity-calendar-empty">Server error while loading press coverage images.</p>
+    `;
+  }
+}
+
+function getImageUrl(imagePath) {
+  if (!imagePath) return "";
+
+  if (imagePath.startsWith("http://") || imagePath.startsWith("https://")) {
+    return imagePath;
+  }
+
+  return `${BASE_URL}${imagePath}`;
+}
+
+function renderPressCoverageImages(images) {
+  pressCoverageGrid.innerHTML = "";
+
+  images.forEach((item) => {
+    const imageUrl = getImageUrl(item.image);
+
     const card = document.createElement("div");
-    card.className = "press-card";
+    card.className = "activity-calendar-card";
 
     card.innerHTML = `
-      <img src="${image}" alt="Press Coverage Image">
-      <button class="delete-btn" title="Delete Image">
-        <i class="fa-solid fa-trash"></i>
-      </button>
+      <img src="${imageUrl}" alt="Press Coverage Image">
     `;
 
     card.querySelector("img").addEventListener("click", () => {
-      openImageModal(image);
+      openPressCoverageImageModal(imageUrl);
     });
 
-    card.querySelector(".delete-btn").addEventListener("click", (e) => {
-      e.stopPropagation();
-      deleteImage(index);
-    });
-
-    pressGrid.appendChild(card);
+    pressCoverageGrid.appendChild(card);
   });
-
-  createUploadCard();
 }
 
-function createUploadCard() {
-  const uploadCard = document.createElement("div");
-  uploadCard.className = "upload-card";
-
-  uploadCard.innerHTML = `
-    <div class="upload-content">
-      <div class="upload-icon">
-        <i class="fa-solid fa-plus"></i>
-      </div>
-      <h3>Add Press Coverage</h3>
-      <p>Click here to upload</p>
-    </div>
-  `;
-
-  uploadCard.addEventListener("click", () => {
-    fileInput.click();
-  });
-
-  pressGrid.appendChild(uploadCard);
+function openPressCoverageImageModal(imageSrc) {
+  pressCoverageModalImage.src = imageSrc;
+  pressCoverageImageModal.classList.add("active");
 }
 
-fileInput.addEventListener("change", function () {
-  const file = this.files[0];
-
-  if (!file) return;
-
-  if (!file.type.startsWith("image/")) {
-    alert("Please only image file upload kare.");
-    return;
-  }
-
-  const reader = new FileReader();
-
-  reader.onload = function (e) {
-    selectedImage = e.target.result;
-    showPreviewCard(selectedImage);
-  };
-
-  reader.readAsDataURL(file);
-  fileInput.value = "";
-});
-
-function showPreviewCard(imageSrc) {
-  const uploadCard = document.querySelector(".upload-card");
-
-  const previewCard = document.createElement("div");
-  previewCard.className = "press-card";
-
-  previewCard.innerHTML = `
-    <img src="${imageSrc}" alt="Preview Image">
-    <button class="save-btn">Save Image</button>
-  `;
-
-  previewCard.querySelector(".save-btn").addEventListener("click", (e) => {
-    e.stopPropagation();
-    saveImage(imageSrc);
-  });
-
-  previewCard.querySelector("img").addEventListener("click", () => {
-    openImageModal(imageSrc);
-  });
-
-  pressGrid.insertBefore(previewCard, uploadCard);
-  uploadCard.remove();
+function closePressCoverageImageModal() {
+  pressCoverageImageModal.classList.remove("active");
+  pressCoverageModalImage.src = "";
 }
 
-function saveImage(imageSrc) {
-  pressImages.push(imageSrc);
+pressCoverageModalClose.addEventListener("click", closePressCoverageImageModal);
 
-  // abhi frontend testing ke liye localStorage
-  localStorage.setItem("pressCoverageImages", JSON.stringify(pressImages));
-
-  // backend banne ke baad yahan POST API call lagegi
-  // fetch(`${API_BASE_URL}/api/press-coverage`, {
-  //   method: "POST",
-  //   body: formData
-  // });
-
-  selectedImage = null;
-  renderPressImages();
-}
-
-function deleteImage(index) {
-  const confirmDelete = confirm("Are you sure you want to delete this image?");
-
-  if (!confirmDelete) return;
-
-  pressImages.splice(index, 1);
-  localStorage.setItem("pressCoverageImages", JSON.stringify(pressImages));
-
-  // backend banne ke baad yahan DELETE API call lagegi
-  // fetch(`${API_BASE_URL}/api/press-coverage/${id}`, {
-  //   method: "DELETE"
-  // });
-
-  renderPressImages();
-}
-
-function openImageModal(imageSrc) {
-  modalImage.src = imageSrc;
-  imageModal.classList.add("active");
-}
-
-function closeImageModal() {
-  imageModal.classList.remove("active");
-  modalImage.src = "";
-}
-
-modalClose.addEventListener("click", closeImageModal);
-
-imageModal.addEventListener("click", (e) => {
-  if (e.target === imageModal) {
-    closeImageModal();
+pressCoverageImageModal.addEventListener("click", (e) => {
+  if (e.target === pressCoverageImageModal) {
+    closePressCoverageImageModal();
   }
 });
 
-renderPressImages();
+fetchPressCoverageImages();

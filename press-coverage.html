@@ -7,7 +7,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Press-coverage | Aakhyaan Foundation</title>
+<title>Activity-calendar | Aakhyaan Foundation</title>
 <meta name="description" content="Aakhyaan Foundation empowers senior citizens through participation, dignity, healthcare, education, advocacy, social accountability, and inclusive community development across India.">
 <meta name="keywords" content="Aakhyaan Foundation, Senior Citizens, Elder Care, Healthy Ageing, Participation, Dignity, Healthcare, Education, Social Accountability, Inclusive Development, Community Development, Elder Rights, Rajasthan, India">
 <meta name="author" content="Aakhyaan Foundation">
@@ -45,9 +45,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- PRELOAD HERO IMAGE -->
 
-<link rel="preload" as="image" href="img/b3.png">
 
 <!-- STRUCTURED DATA (JSON-LD) -->
 <script type="application/ld+json">
@@ -76,8 +74,7 @@
     "https://x.com/"
   ]
 }
-</script> 
-
+</script>    
     <!-- Font Awesome -->
      <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -89,7 +86,7 @@
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
-    <link rel="stylesheet" href="./css/press-coverage.css">
+    <link rel="stylesheet" href="css/activity-calendar.css">
 
 </head>
 
@@ -97,32 +94,24 @@
 
     <div id="header"></div>
 
-
-
-<section class="press-admin-section">
-    <div class="press-header">
-      <h1>Our Press Coverage</h1>
+  <section class="activity-calendar-section">
+    <div class="activity-calendar-header">
+      <h1>Press Coverage</h1>
       <p>
-        Discover the latest news, media coverage, and stories highlighting 
-        Aakhyaan Foundation's commitment to empowering and supporting 
-        senior citizens with dignity and care.
+        Explore our latest press coverage, media highlights, and news updates.
       </p>
     </div>
 
-    <div class="press-grid" id="pressGrid"></div>
-</section>
+    <div class="activity-calendar-grid" id="pressCoverageGrid"></div>
+  </section>
 
- <!-- hidden file input -->
-  <input type="file" id="pressFileInput" accept="image/*" hidden />
-
-  <!-- image popup -->
-<div class="image-modal" id="imageModal">
-    <button class="modal-close" id="modalClose">
+  <div class="activity-calendar-image-modal" id="pressCoverageImageModal">
+    <button class="activity-calendar-modal-close" id="pressCoverageModalClose">
       <i class="fa-solid fa-xmark"></i>
     </button>
-    <img id="modalImage" src="" alt="Press Coverage" />
-</div>
 
+    <img id="pressCoverageModalImage" src="" alt="Press Coverage Image" />
+  </div>
 
 
 
@@ -130,18 +119,20 @@
 <div id="floating-icons"></div>
 
     <!-- JS -->
-    <script src="./js/header.js"></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./js/signup.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="./js/floating.js"></script>
-    <script src="./js/press-coverage.js"></script>
-
+     <script src="./config.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/floating.js"></script>
+    <script src="js/press-coverage.js"></script>
 
 </body>
 
 </html>
+
+
 
 
 

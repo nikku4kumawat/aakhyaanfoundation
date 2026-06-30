@@ -578,6 +578,14 @@ display:block;
 .logo img{
 height:55px;
 }
+
+.logo{
+    margin-left:20px;
+}
+
+.mobile-btn{
+    margin-right:20px;
+}
 }
 /* Tablet */
 
@@ -593,6 +601,21 @@ height:55px;
 
     .mobile-menu{
         width:280px;
+    }
+
+
+    
+
+    .nav-container{
+        padding:0 15px;
+    }
+
+    .logo{
+        margin-left:10px;
+    }
+
+    .mobile-btn{
+        margin-right:10px;
     }
 
 }

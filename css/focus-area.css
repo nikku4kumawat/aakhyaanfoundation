@@ -1,0 +1,260 @@
+/*=========================================
+        FOCUS AREA
+==========================================*/
+
+.focus-area-section{
+
+    padding:90px 0;
+    background:#ffffff;
+
+}
+
+.focus-wrapper{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:55px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/*=====================
+Image
+======================*/
+
+.focus-image{
+
+    flex:1;
+    text-align:center;
+
+}
+
+.focus-image img{
+
+    width:100%;
+    max-width:430px;
+    border-radius:25px;
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/*=====================
+Content
+======================*/
+
+.focus-content{
+
+    flex:1;
+
+}
+
+.focus-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#1187c9;
+
+    margin-bottom:45px;
+
+    animation:zoomTitle 1.2s ease infinite alternate;
+
+}
+
+.focus-title i{
+
+    color:#1187c9;
+
+    margin-right:12px;
+
+}
+
+/*======================
+Boxes
+=======================*/
+
+.focus-boxes{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.focus-box{
+
+    width:170px;
+
+    height:120px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:2px solid #1187c9;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#333;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.focus-box:hover{
+
+    transform:translateY(-12px);
+
+    background:#1187c9;
+
+    color:#fff;
+
+}
+
+/*======================
+Animations
+=======================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes zoomTitle{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/*========================
+Responsive
+=========================*/
+
+@media(max-width:992px){
+
+.focus-wrapper{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+.focus-content{
+
+width:100%;
+
+}
+
+.focus-boxes{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.focus-title{
+
+font-size:32px;
+
+}
+
+.focus-box{
+
+width:140px;
+
+height:100px;
+
+font-size:18px;
+
+}
+
+.focus-image img{
+
+max-width:300px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.focus-wrapper{
+
+padding:25px;
+
+}
+
+.focus-boxes{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.focus-box{
+
+width:220px;
+
+}
+
+}

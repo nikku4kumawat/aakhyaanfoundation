@@ -188,7 +188,7 @@ header.innerHTML += `
                         <li><a href="audit.html">AUDIT</a></li>
                         <li><a href="child-protection-policy.html">CHILD PROTECTION POLICY</a></li>
                         <li><a href="posh.html">POSH</a></li>
-                        <li><a href="guide-for-employees.html">GUIDE FOR EMPLOYEES</a></li>
+                        <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2024/08/Guide-For-Employees.pdf" target="_blank">GUIDE FOR EMPLOYEES</a></li>
                         <li><a href="certifications.html">CERTIFICATIONS</a></li>
 
                     </ul>
@@ -207,7 +207,7 @@ header.innerHTML += `
 
                         <li><a href="our-team.html">OUR TEAM</a></li>
                         <li><a href="partnership.html">PARTNERSHIP</a></li>
-                        <li><a href="vision-document.html">VISION DOCUMENT</a></li>
+                        <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2025/03/Vision-Document.pdf"target="_blank">VISION DOCUMENT</a></li>
                         <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
                         <li><a href="press-coverage.html">PRESS COVERAGE</a></li>
                         <li><a href="blog.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
@@ -364,7 +364,7 @@ header.innerHTML += `
                 <li><a href="audit.html">AUDIT</a></li>
                 <li><a href="child-protection-policy.html">CHILD PROTECTION POLICY</a></li>
                 <li><a href="posh.html">POSH</a></li>
-                <li><a href="guide-for-employees.html">GUIDE FOR EMPLOYEES</a></li>
+                <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2024/08/Guide-For-Employees.pdf" target="_blank">GUIDE FOR EMPLOYEES</a></li>
                 <li><a href="certifications.html">CERTIFICATIONS</a></li>
 
             </ul>
@@ -383,7 +383,7 @@ header.innerHTML += `
 
                 <li><a href="our-team.html">OUR TEAM</a></li>
                 <li><a href="partnership.html">PARTNERSHIP</a></li>
-                <li><a href="vision-document.html">VISION DOCUMENT</a></li>
+                <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2025/03/Vision-Document.pdf"target="_blank">VISION DOCUMENT</a></li>
                 <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
                 <li><a href="press-coverage.html">PRESS COVERAGE</a></li>
                 <li><a href="blog.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>

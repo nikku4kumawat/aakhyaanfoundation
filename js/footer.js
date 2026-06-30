@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="/">Home</a>
             <a href="#about">About</a>
             <a href="#programmes">Our Programmes</a>
-             <a href="#howwework">How We Work</a>
+            <a href="#howwework">How We Work</a>
             <a href="#faq">FAQ</a>
             <a href="#patners">Our Partners</a>
 

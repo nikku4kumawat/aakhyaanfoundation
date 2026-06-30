@@ -45,9 +45,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- PRELOAD HERO IMAGE -->
 
-<link rel="preload" as="image" href="img/b3.png">
 
 <!-- STRUCTURED DATA (JSON-LD) -->
 <script type="application/ld+json">
@@ -76,12 +74,10 @@
     "https://x.com/"
   ]
 }
-</script>   
-
+</script>    
     <!-- Font Awesome -->
      <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />    
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/header.css">
@@ -90,7 +86,7 @@
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="css/activity-calendar.css">
 
 </head>
 
@@ -98,30 +94,24 @@
 
     <div id="header"></div>
 
-
-<section class="blog-admin-section">
-    <div class="blog-header">
-      <h1>Our Blog</h1>
+  <section class="activity-calendar-section">
+    <div class="activity-calendar-header">
+      <h1>Blog</h1>
       <p>
-        Discover inspiring stories, impactful initiatives, community updates, 
-        and meaningful insights from Aakhyaan Foundation as we work to empower individuals,
-         support senior citizens, and build a more inclusive and compassionate society.
+        Explore our latest blog updates, stories, and foundation activities.
       </p>
     </div>
 
-    <div class="blog-grid" id="blogGrid"></div>
-</section>
+    <div class="activity-calendar-grid" id="blogGrid"></div>
+  </section>
 
-  <input type="file" id="blogFileInput" accept="image/*" hidden />
-
-  <div class="blog-image-modal" id="blogImageModal">
-    <button class="blog-modal-close" id="blogModalClose">
+  <div class="activity-calendar-image-modal" id="blogImageModal">
+    <button class="activity-calendar-modal-close" id="blogModalClose">
       <i class="fa-solid fa-xmark"></i>
     </button>
+
     <img id="blogModalImage" src="" alt="Blog Image" />
   </div>
-
-
 
 
 
@@ -129,24 +119,18 @@
 <div id="floating-icons"></div>
 
     <!-- JS -->
+     <script src="./config.js"></script>
     <script src="js/header.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/login.js"></script>
     <script src="js/signup.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/floating.js"></script>
-    <script src="./js/blog.js"></script>
-
+    <script src="js/press-coverage.js"></script>
 
 </body>
 
 </html>
-
-
-
-
-
-
 
 
 

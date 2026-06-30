@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <a href="overview.html">Overview</a>
             <a href="mission.html">Vision & Mission</a>
-            <a href="../servicespages/company-incorporation.html">Values </a>
-            <a href="../servicespages/statutory-audit.html">Board Of Directors</a>
-            <a href="../servicespages/business-entity-registration.html">Advisory Board</a>
-            <a href="../servicespages/business-entity-registration.html">Contact</a>
+            <a href="value.html">Values </a>
+            <a href="board.html">Board Of Directors</a>
+            <a href="advisory.html">Advisory Board</a>
+            <a href="contact.html">Contact</a>
 
         </div>
 

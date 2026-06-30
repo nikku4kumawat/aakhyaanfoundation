@@ -94,7 +94,24 @@
 
   <div id="header"></div>
 
+  <section class="activity-calendar-section">
+    <div class="activity-calendar-header">
+      <h1>Gallery</h1>
+      <p>
+        Explore our latest gallery images, events, and foundation activities.
+      </p>
+    </div>
 
+    <div class="activity-calendar-grid" id="galleryGrid"></div>
+  </section>
+
+  <div class="activity-calendar-image-modal" id="galleryImageModal">
+    <button class="activity-calendar-modal-close" id="galleryModalClose">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="galleryModalImage" src="" alt="Gallery Image" />
+  </div>
 
 
 
@@ -117,52 +134,3 @@
 
 
 
-
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Gallery</title>
-  <link rel="icon" type="image/png" href="./favicon.png">
-
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/activitycalendar.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-
-<body>
-
-  <div id="header"></div>
-
-  <section class="activity-calendar-section">
-    <div class="activity-calendar-header">
-      <h1>Gallery</h1>
-      <p>
-        Explore our latest gallery images, events, and foundation activities.
-      </p>
-    </div>
-
-    <div class="activity-calendar-grid" id="galleryGrid"></div>
-  </section>
-
-  <div class="activity-calendar-image-modal" id="galleryImageModal">
-    <button class="activity-calendar-modal-close" id="galleryModalClose">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-
-    <img id="galleryModalImage" src="" alt="Gallery Image" />
-  </div>
-
-  <div id="footer"></div>
-  <div id="floating-icons"></div>
-
-  <script src="./config.js"></script>
-  <script src="./js/header.js"></script>
-  <script src="./js/gallery.js"></script>
-
-</body>
-</html>

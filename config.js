@@ -5,4 +5,5 @@ const API_PATHS = {
   PRESS_COVERAGE: `${BASE_URL}/api/press-coverage`,
   ADMIN_BLOG: `${BASE_URL}/api/admin-blog`,
   ADMIN_GALLERY: `${BASE_URL}/api/admin-gallery`,
+  DOCUMENTS: `${BASE_URL}/api/documents`,
 };

@@ -589,19 +589,20 @@
   .banner-event-card {
     bottom: 25px;
     left: 12px;
-    right: 48px;
-    height: 72px;
+    right: 12px;
+    height: 170px;
     padding: 7px;
+
   }
 
   .banner-event-card-head {
-    font-size: 9px;
+    font-size: 15px;
   }
 
   .banner-event-card-head i {
     width: 20px;
     height: 20px;
-    font-size: 9px;
+    font-size: 15px;
   }
 
   .banner-event-moving-box {

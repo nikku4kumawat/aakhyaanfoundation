@@ -25,11 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
                   <i class="fa-brands fa-instagram"></i>
                 </a>
 
-                <!-- Call -->
-                <a href="https://x.com/home" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-
                 <!-- WhatsApp -->
                 <a href="https://www.linkedin.com/company/aakhyaan-foundation/" target="_blank">
                   <i class="fa-brands fa-linkedin-in"></i>

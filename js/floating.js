@@ -7,14 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
         floatingContainer.innerHTML = `
             <div class="floating-icons">
 
-                 <!-- twiter -->
-                <a href="https://x.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="floating-icon twiter ring-effect"
-                   title="https://x.com/">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
                 
                 <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/company/aakhyaan-foundation/"

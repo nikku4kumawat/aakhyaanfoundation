@@ -41,9 +41,12 @@ header.innerHTML = `
                 <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="https://x.com/" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
+
+             <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=918239707266"
+                   target="_blank"
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
 
             <a href="https://www.linkedin.com/company/aakhyaan-foundation/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
@@ -430,7 +433,7 @@ header.innerHTML += `
                 </a>
 
                 <a href="#">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
 
             </div>

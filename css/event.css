@@ -314,7 +314,7 @@
 }
 
 /* MOBILE */
-
+/* 
 @media (max-width: 768px) {
     .banner {
         height: 78vh;
@@ -440,6 +440,190 @@
     .banner-dots {
         bottom: 18px;
     }
+} */
+
+
+/* MOBILE / SMALL SCREEN FIX */
+@media (max-width: 768px) {
+
+  .banner {
+    height: 42vh;
+    min-height: 310px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .banner-content {
+    left: 14px;
+    right: 70px;
+    top: 38%;
+    transform: translateY(-50%);
+    max-width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 19px;
+    line-height: 1.25;
+    margin-top:-80px;
+  }
+
+  .banner-content p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top:-20px;
+  }
+
+  .banner-event-card {
+    bottom: 28px;
+    left: 14px;
+    right: 55px;
+    transform: none;
+    width: auto;
+    height: 78px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  .banner-event-card-head {
+    font-size: 10px;
+    gap: 6px;
+    margin-bottom: 5px;
+  }
+
+  .banner-event-card-head i {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .banner-event-moving-box {
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .banner-event-moving-track {
+    gap: 6px;
+    animation-duration: 7s;
+  }
+
+  .banner-event-item {
+    min-height: 32px;
+    padding: 5px 7px;
+    border-radius: 8px;
+  }
+
+  .banner-event-item strong {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .banner-event-item p {
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
+  @keyframes bannerMoveBottomToTop {
+    0% {
+      transform: translateY(36px);
+    }
+
+    100% {
+      transform: translateY(-80px);
+    }
+  }
+
+  .banner-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    top:40%;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  .banner-dots {
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .banner {
+    height: 38vh;
+    min-height: 285px;
+  }
+
+  .banner-content {
+    top: 37%;
+    left: 12px;
+    right: 58px;
+  }
+
+  .banner-content h1 {
+    font-size: 17px;
+    line-height: 1.25;
+  }
+
+  .banner-content p {
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  .banner-event-card {
+    bottom: 25px;
+    left: 12px;
+    right: 48px;
+    height: 72px;
+    padding: 7px;
+  }
+
+  .banner-event-card-head {
+    font-size: 9px;
+  }
+
+  .banner-event-card-head i {
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
+  }
+
+  .banner-event-moving-box {
+    height: 32px;
+  }
+
+  .banner-event-item {
+    min-height: 30px;
+    padding: 4px 6px;
+  }
+
+  .banner-event-item strong {
+    font-size: 7px;
+  }
+
+  .banner-event-item p {
+    font-size: 8px;
+  }
+
+  .banner-dots {
+    bottom: 8px;
+  }
 }
 
 /*==================

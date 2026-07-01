@@ -24,10 +24,12 @@ footer{
 .footer-brand img{
     width:180px;
     display:block;
-    margin-bottom:30px;
+    margin-bottom:10px;
     margin-top: 30px;
     height: 100px;
+    margin-top: -30px;
 }
+
 
 .footer-brand p{
     color:#d1d5db;

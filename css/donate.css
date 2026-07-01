@@ -1,6 +1,6 @@
-/*==============================
-        DONATION SECTION
-===============================*/
+/*==================================================
+                DONATION SECTION
+==================================================*/
 
 .donation-section{
     width:100%;
@@ -9,72 +9,49 @@
 }
 
 .donation-container{
-    width:85%;
-    max-width:1250px;
+    width:90%;
+    max-width:1300px;
     margin:auto;
 }
 
-.donation-title{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-.donation-title h2{
-    font-size:38px;
-    font-weight:700;
-    color:#008ad0;
-    position:relative;
-    display:inline-block;
-}
-
-.donation-title p{
-    font-weight:700;
-    font-size:16px;
-    color: #008ad0;
-    position:relative;
-    display:inline-block;
-}
-
-.donation-title h2::after{
-    content:"";
-    width:80px;
-    height:4px;
-    background:#008ad0;
-    position:absolute;
-    left:50%;
-    bottom:-12px;
-    transform:translateX(-50%);
-    border-radius:20px;
-}
-
-/*==============================
-      MAIN WRAPPER
-===============================*/
+/*==================================================
+                WRAPPER
+==================================================*/
 
 .donation-wrapper{
     display:flex;
-    gap:35px;
+    justify-content:space-between;
     align-items:flex-start;
+    gap:35px;
 }
 
-/*==============================
-        LEFT FORM
-===============================*/
+/*==================================================
+                LEFT FORM
+==================================================*/
 
 .donation-form{
     flex:1;
     background:#fff;
-    border-radius:15px;
+    border-radius:18px;
     padding:35px;
-    height:700px;
+    height:760px;
     overflow-y:auto;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border-right:5px solid #008ad0;
+    border-right:none;
 }
 
-/* Scrollbar */
+/*==================================================
+                SCROLLBAR
+==================================================*/
 
 .donation-form::-webkit-scrollbar{
-    width:8px;
+    width:4px;
+}
+
+.donation-form::-webkit-scrollbar-track{
+    background:#ececec;
+    border-radius:20px;
 }
 
 .donation-form::-webkit-scrollbar-thumb{
@@ -82,13 +59,24 @@
     border-radius:20px;
 }
 
-.donation-form::-webkit-scrollbar-track{
-    background:#eee;
+/*==================================================
+                TITLE
+==================================================*/
+
+.donation-title{
+    text-align:center;
+    margin-bottom:35px;
 }
 
-/*==============================
-        FORM GRID
-===============================*/
+.donation-title p{
+    font-size:28px;
+    color:#008ad0;
+    font-weight:700;
+}
+
+/*==================================================
+                FORM GRID
+==================================================*/
 
 .donation-form form{
     display:grid;
@@ -100,9 +88,10 @@
     grid-column:1/-1;
 }
 
-/*==============================
-        LABEL
-===============================*/
+
+/*==================================================
+                FORM GROUP
+==================================================*/
 
 .form-group{
     display:flex;
@@ -111,209 +100,404 @@
 
 .form-group label{
     font-size:15px;
-    color:#333;
     font-weight:600;
+    color:#333;
     margin-bottom:10px;
+    letter-spacing:.3px;
 }
 
 .form-group label span{
-    color:red;
+    color:#ff3b30;
 }
 
-/*==============================
-       INPUTS
-===============================*/
+/*==================================================
+                INPUT
+==================================================*/
 
 .form-group input,
 .form-group textarea,
 .form-group select{
+
     width:100%;
-    padding:14px 16px;
-    border:1px solid #d8d8d8;
-    border-radius:8px;
-    font-size:15px;
+    padding:15px 18px;
+
+    border:1px solid #d9d9d9;
+
+    border-radius:10px;
+
     outline:none;
-    transition:.3s;
+
     background:#fff;
+
+    font-size:15px;
+
+    color:#333;
+
+    transition:.35s;
+
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:#9b9b9b;
+
 }
 
 .form-group textarea{
-    height:170px;
+
     resize:none;
+
+    height:170px;
+
 }
+
+.form-group select{
+
+    cursor:pointer;
+
+}
+
+/*==================================================
+                FOCUS
+==================================================*/
 
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus{
+
     border-color:#008ad0;
-    box-shadow:0 0 8px rgba(0,138,208,.20);
+
+    box-shadow:0 0 8px rgba(0,138,208,.18);
+
 }
 
-/*==============================
-      SMALL UPLOAD BOX
-===============================*/
+/*==================================================
+            SMALL UPLOAD BOX
+==================================================*/
 
 .upload-box-small{
+
     width:180px;
+
     height:180px;
+
     border:2px dashed #cfcfcf;
-    border-radius:12px;
-    position:relative;
+
+    border-radius:15px;
+
     display:flex;
-    flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
-    cursor:pointer;
-    transition:.35s;
+
+    flex-direction:column;
+
+    position:relative;
+
     overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    background:#fafafa;
+
 }
 
 .upload-box-small:hover{
+
     border-color:#008ad0;
-    background:#f4fbff;
+
+    background:#f2fbff;
+
 }
 
 .upload-box-small i{
+
     font-size:42px;
+
     color:#008ad0;
+
     margin-bottom:15px;
+
 }
 
 .upload-box-small p{
+
     font-size:15px;
+
     font-weight:600;
-    color:#333;
+
+    color:#444;
+
 }
 
 .upload-box-small input{
+
     position:absolute;
+
     inset:0;
+
     opacity:0;
+
     cursor:pointer;
+
 }
 
-/*==============================
-        BUTTON
-===============================*/
+/*==================================================
+                DONATE BUTTON
+==================================================*/
 
 .donate-btn{
+
     grid-column:1/-1;
-    padding:16px;
+
+    width:100%;
+
+    padding:17px;
+
     border:none;
+
+    border-radius:10px;
+
     background:#008ad0;
+
     color:#fff;
+
     font-size:17px;
+
     font-weight:700;
-    border-radius:8px;
+
     cursor:pointer;
+
     transition:.35s;
+
+    margin-top:10px;
+
 }
 
 .donate-btn:hover{
+
     background:#006fa8;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,138,208,.25);
+
 }
 
-/*==============================
-       RIGHT SIDE
-===============================*/
+
+/*==================================================
+                RIGHT SIDE
+==================================================*/
 
 .donation-upload{
     width:360px;
+    flex-shrink:0;
     position:sticky;
     top:100px;
 }
 
-.donation-upload h3{
-    text-align:center;
-    margin-bottom:20px;
-    color:#008ad0;
-    font-size:26px;
-}
+/*==================================================
+                DONATION CARD
+==================================================*/
 
-/*==============================
-      SCANNER BOX
-===============================*/
+.donation-card{
 
-.scanner-box{
     width:100%;
-    height:420px;
-    border:3px solid #008ad0;
-    border-radius:18px;
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    transition:.35s;
+    height:auto;
     background:#fff;
+
+    border:3px solid #008ad0;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
 }
 
-.scanner-box:hover{
-    border-style:dashed;
-    background:#f4fbff;
+.donation-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
 }
 
-.scanner-box input{
-    position:absolute;
-    inset:0;
-    opacity:0;
-    cursor:pointer;
-}
+/*==================================================
+                CARD TOP
+==================================================*/
 
-.scanner-content{
-    text-align:center;
-}
+.donation-card-top{
 
-.scanner-content i{
-    font-size:70px;
-    color:#008ad0;
-    margin-bottom:20px;
-}
+    padding:20px;
 
-.scanner-content h4{
-    font-size:24px;
-    margin-bottom:12px;
-    color:#222;
-}
+    border-bottom:none;
 
-.scanner-content p{
-    color:#666;
-    font-size:15px;
+    /* border-bottom:2px solid #008ad0; */
+
+    background:#fff;
+
 }
 
 /*==============================
-      NOTE BOX
-===============================*/
+        NAME & UPI
+==============================*/
 
-.scanner-note{
-    margin-top:25px;
-    background:#fff;
-    border-radius:12px;
-    padding:22px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+.upi-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
 }
 
-.scanner-note h5{
-    font-size:20px;
+.upi-row:last-child{
+
+    margin-bottom:0;
+
+}
+
+.upi-row span{
+
     color:#008ad0;
-    margin-bottom:15px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    min-width:85px;
+
 }
 
-.scanner-note ul{
-    padding-left:20px;
+.upi-row strong{
+
+    color:#000;
+    white-space:nowrap;
+
+    font-size:18px;
+
+    font-weight:700;
+
+
 }
 
-.scanner-note ul li{
-    margin-bottom:10px;
-    color:#555;
-    line-height:1.6;
+/*==================================================
+                CARD BODY
+==================================================*/
+
+.donation-card-body{
+
+    padding:30px 20px;
+
+    text-align:center;
+
+}
+
+.donation-card-body h3{
+
+    font-size:26px;
+
+    color:#333;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+    margin-bottom:25px;
+
+}
+
+/*==================================================
+                QR IMAGE
+==================================================*/
+
+.qr-image{
+
+    width:260px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/*==================================================
+                UPI APPS
+==================================================*/
+
+.upi-apps{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.upi-apps img{
+
+    height:36px;
+
+    width:auto;
+
+    object-fit:contain;
+
+    transition:.3s;
+
+}
+
+.upi-apps img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+                FOOTER
+==================================================*/
+
+.donation-card-footer{
+
+    background:#008ad0;
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    padding:18px;
+
+    letter-spacing:.3px;
+
 }
 
 
-
-/*======================================
-        LARGE LAPTOP
-======================================*/
+/*==================================================
+                LARGE LAPTOP
+==================================================*/
 
 @media (max-width:1400px){
 
@@ -322,15 +506,23 @@
     }
 
     .donation-upload{
-        width:330px;
+        width:340px;
+    }
+
+    .donation-form{
+        height:720px;
+    }
+
+    .qr-image{
+        width:240px;
     }
 
 }
 
 
-/*======================================
-            LAPTOP
-======================================*/
+/*==================================================
+                    LAPTOP
+==================================================*/
 
 @media (max-width:1200px){
 
@@ -339,19 +531,32 @@
     }
 
     .donation-upload{
-        width:300px;
+        width:320px;
     }
 
-    .scanner-box{
-        height:360px;
+    .donation-form{
+        padding:30px;
+        height:700px;
+    }
+
+    .donation-title p{
+        font-size:24px;
+    }
+
+    .donation-card-body h3{
+        font-size:22px;
+    }
+
+    .qr-image{
+        width:220px;
     }
 
 }
 
 
-/*======================================
-            TABLET
-======================================*/
+/*==================================================
+                    TABLET
+==================================================*/
 
 @media (max-width:991px){
 
@@ -361,277 +566,259 @@
 
     .donation-form{
         width:100%;
+        order:2;
         height:auto;
         overflow:visible;
-        order:2;
     }
 
     .donation-upload{
-
         width:100%;
+        order:1;
         position:relative;
         top:0;
-        order:1;
-
     }
 
-    .scanner-box{
+    .donation-card{
+        max-width:500px;
+        margin:auto;
+    }
 
-        height:320px;
-
+    .donation-form form{
+        grid-template-columns:repeat(2,1fr);
     }
 
 }
 
 
-/*======================================
-          SMALL TABLET
-======================================*/
+/*==================================================
+                SMALL TABLET
+==================================================*/
 
 @media (max-width:768px){
 
     .donation-section{
-
-        padding:60px 0;
-
-    }
-
-    .donation-title h2{
-
-        font-size:30px;
-
+        padding:50px 0;
     }
 
     .donation-form{
-
         padding:25px;
+    }
 
+    .donation-title{
+        margin-bottom:25px;
+    }
+
+    .donation-title p{
+        font-size:22px;
     }
 
     .donation-form form{
-
         grid-template-columns:1fr;
-
     }
 
     .full-width{
-
         grid-column:auto;
-
     }
 
     .upload-box-small{
-
         width:100%;
-        max-width:220px;
+        max-width:200px;
         height:170px;
-
     }
 
-    .scanner-box{
-
-        height:300px;
-
+    .upi-row{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
     }
 
-    .scanner-content i{
-
-        font-size:60px;
-
+    .upi-row strong{
+        text-align:center;
     }
 
-    .scanner-content h4{
+    .donation-card-body{
+        padding:25px;
+    }
 
+    .donation-card-body h3{
         font-size:22px;
+    }
 
+    .qr-image{
+        width:210px;
+    }
+
+    .upi-apps{
+        gap:15px;
+    }
+
+    .upi-apps img{
+        height:32px;
+    }
+
+    .donation-card-footer{
+        font-size:18px;
     }
 
 }
 
 
-/*======================================
-              MOBILE
-======================================*/
+/*==================================================
+                    MOBILE
+==================================================*/
 
 @media (max-width:576px){
 
     .donation-section{
-
         padding:40px 0;
-
     }
 
     .donation-container{
-
         width:92%;
-
-    }
-
-    .donation-title{
-
-        margin-bottom:25px;
-
-    }
-
-    .donation-title h2{
-
-        font-size:26px;
-
     }
 
     .donation-form{
-
         padding:20px;
+    }
 
-        border-radius:12px;
-
+    .donation-title p{
+        font-size:18px;
     }
 
     .form-group label{
-
         font-size:14px;
-
     }
 
     .form-group input,
     .form-group textarea,
     .form-group select{
-
-        padding:13px;
-
         font-size:14px;
-
+        padding:13px;
     }
 
     .form-group textarea{
-
-        height:110px;
-
+        height:120px;
     }
 
     .upload-box-small{
-
-        width:100%;
         max-width:180px;
         height:150px;
-
     }
 
     .upload-box-small i{
-
         font-size:34px;
-
     }
 
     .upload-box-small p{
-
         font-size:13px;
-
     }
 
     .donate-btn{
-
-        width:100%;
-
-        padding:14px;
-
         font-size:15px;
-
+        padding:15px;
     }
 
-    .scanner-box{
-
-        height:260px;
-
+    .donation-card-top{
+        padding:20px;
     }
 
-    .scanner-content i{
-
-        font-size:50px;
-
+    .upi-row span{
+        font-size:17px;
     }
 
-    .scanner-content h4{
+    .upi-row strong{
+        font-size:15px;
+    }
 
+    .donation-card-body h3{
         font-size:20px;
-
     }
 
-    .scanner-content p{
-
-        font-size:14px;
-
+    .qr-image{
+        width:180px;
     }
 
-    .scanner-note{
-
-        padding:18px;
-
+    .upi-apps img{
+        height:28px;
     }
 
-    .scanner-note h5{
-
-        font-size:18px;
-
-    }
-
-    .scanner-note ul li{
-
-        font-size:14px;
-
+    .donation-card-footer{
+        font-size:16px;
+        padding:15px;
     }
 
 }
 
 
-/*======================================
-         VERY SMALL MOBILE
-======================================*/
+/*==================================================
+                VERY SMALL MOBILE
+==================================================*/
 
 @media (max-width:400px){
 
-    .donation-title h2{
-
-        font-size:22px;
-
+    .donation-container{
+        width:95%;
     }
 
     .donation-form{
-
         padding:15px;
+    }
 
+    .donation-title p{
+        font-size:16px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select{
+        font-size:13px;
+        padding:12px;
     }
 
     .upload-box-small{
-
         max-width:160px;
-
-        height:140px;
-
+        height:135px;
     }
 
-    .scanner-box{
-
-        height:220px;
-
+    .upload-box-small i{
+        font-size:30px;
     }
 
-    .scanner-content i{
-
-        font-size:42px;
-
+    .upload-box-small p{
+        font-size:12px;
     }
 
-    .scanner-content h4{
+    .donate-btn{
+        font-size:14px;
+    }
 
+    .upi-row span{
+        font-size:16px;
+    }
+
+    .upi-row strong{
+        font-size:14px;
+    }
+
+    .donation-card-body h3{
         font-size:18px;
-
     }
 
-    .scanner-note{
+    .qr-image{
+        width:160px;
+    }
 
-        padding:15px;
+    .upi-apps{
+        gap:10px;
+    }
 
+    .upi-apps img{
+        height:24px;
+    }
+
+    .donation-card-footer{
+        font-size:14px;
+        padding:14px;
     }
 
 }

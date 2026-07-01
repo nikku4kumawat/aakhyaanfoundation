@@ -177,7 +177,7 @@ header.innerHTML += `
 
                     <ul class="submenu">
 
-                        
+                        <li><a href="upcomingevent.html">UPCOMING EVENTS</a></li>
                         <li><a href="report.html">REPORT</a></li>
                         <li><a href="audit.html">AUDIT</a></li>
                         <li><a href="child-protection-policy.html">CHILD PROTECTION POLICY</a></li>
@@ -352,7 +352,8 @@ header.innerHTML += `
             </div>
 
             <ul class="mobile-submenu">
-     
+
+                <li><a href="upcomingevent.html">UPCOMING EVENTS</a></li>
                 <li><a href="report.html">REPORT</a></li>
                 <li><a href="audit.html">AUDIT</a></li>
                 <li><a href="child-protection-policy.html">CHILD PROTECTION POLICY</a></li>

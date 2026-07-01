@@ -606,7 +606,7 @@
   }
 
   .banner-event-moving-box {
-    height: 80px;
+    height: 120px;
   }
 
   .banner-event-item {
@@ -615,11 +615,11 @@
   }
 
   .banner-event-item strong {
-    font-size: 7px;
+    font-size: 12px;
   }
 
   .banner-event-item p {
-    font-size: 8px;
+    font-size: 18px;
   }
 
   .banner-dots {

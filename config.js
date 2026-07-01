@@ -7,4 +7,5 @@ const API_PATHS = {
   ADMIN_GALLERY: `${BASE_URL}/api/admin-gallery`,
   DOCUMENTS: `${BASE_URL}/api/documents`,
   AUDIT_DOCUMENTS: `${BASE_URL}/api/audit-documents`,
+  UPCOMING_EVENT: `${BASE_URL}/api/upcoming-events`,
 };

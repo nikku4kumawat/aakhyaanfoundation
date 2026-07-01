@@ -1,3 +1,9 @@
+const BASE_URL = "https://akhyanfoundationback.onrender.com";
+
+const API_PATHS = {
+    UPCOMING_EVENT: `${BASE_URL}/api/upcoming-events`,
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =========================
@@ -34,8 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
             dot.classList.remove("active");
         });
 
+        if (!slides[index]) return;
+
         slides[index].classList.add("active");
-        dots[index].classList.add("active");
+
+        if (dots[index]) {
+            dots[index].classList.add("active");
+        }
 
         const heading = slides[index].querySelector("h1");
         const para = slides[index].querySelector("p");
@@ -166,9 +177,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     fetchBannerUpcomingEvent();
-
-    /* =========================
-       Upcoming Event Fetch End
-    ========================= */
 
 });

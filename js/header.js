@@ -49,16 +49,7 @@ header.innerHTML = `
                 <i class="fab fa-linkedin-in"></i>
             </a>
 
-            <div class="auth-buttons">
-               <a href="javascript:void(0)" id="loginBtn" class="login-btn">
-                 <i class="fas fa-sign-in-alt"></i>
-                    Login
-               </a>
-               <a href="javascript:void(0)" id="signupBtn" class="signup-btn">
-                    <i class="fas fa-user-plus"></i>
-                    Sign Up
-               </a>
-           </div>
+
 
         </div>
 
@@ -444,16 +435,7 @@ header.innerHTML += `
 
             </div>
 
-           <div class="mobile-auth">
-              <a href="javascript:void(0)" id="mobileLoginBtn" class="mobile-login">
-                  <i class="fas fa-sign-in-alt"></i>
-                   Login
-              </a>
-              <a href="javascript:void(0)" id="mobileSignupBtn" class="mobile-signup">
-                  <i class="fas fa-user-plus"></i>
-                   Sign Up
-              </a>
-            </div>
+
 
         </div>
 

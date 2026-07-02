@@ -199,7 +199,7 @@ header.innerHTML += `
 
                     <ul class="submenu">
 
-                        <li><a href="our-team.html">OUR TEAM</a></li>
+                        <li><a href="#">OUR TEAM</a></li>
                         <li><a href="partnership.html">PARTNERSHIP</a></li>
                         <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2025/03/Vision-Document.pdf"target="_blank">VISION DOCUMENT</a></li>
                         <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
@@ -375,7 +375,7 @@ header.innerHTML += `
 
             <ul class="mobile-submenu">
 
-                <li><a href="our-team.html">OUR TEAM</a></li>
+                <li><a href="#">OUR TEAM</a></li>
                 <li><a href="partnership.html">PARTNERSHIP</a></li>
                 <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2025/03/Vision-Document.pdf"target="_blank">VISION DOCUMENT</a></li>
                 <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>

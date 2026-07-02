@@ -77,7 +77,7 @@ header.innerHTML += `
         <div class="logo">
 
             <a href="#">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/af-logo.gif" alt="logo">
             </a>
 
         </div>

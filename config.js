@@ -8,4 +8,5 @@ const API_PATHS = {
   DOCUMENTS: `${BASE_URL}/api/documents`,
   AUDIT_DOCUMENTS: `${BASE_URL}/api/audit-documents`,
   UPCOMING_EVENT: `${BASE_URL}/api/upcoming-events`,
+  DONORS: `${BASE_URL}/api/donors`,
 };

@@ -181,7 +181,7 @@ header.innerHTML += `
                         <li><a href="report.html">REPORT</a></li>
                         <li><a href="audit.html">AUDIT</a></li>
                         <li><a href="child-protection-policy.html">POLICIES</a></li>
-                        <li><a href="posh.html">LIST OF DONORS</a></li>
+                        <li><a href="donerlist.html">LIST OF DONORS</a></li>
                         <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2024/08/Guide-For-Employees.pdf" target="_blank">GUIDE FOR EMPLOYEES</a></li>
                         <li><a href="certifications.html">CERTIFICATIONS</a></li>
 
@@ -357,7 +357,7 @@ header.innerHTML += `
                 <li><a href="report.html">REPORT</a></li>
                 <li><a href="audit.html">AUDIT</a></li>
                 <li><a href="child-protection-policy.html">POLICIES</a></li>
-                <li><a href="posh.html">LIST OF DONORS</a></li>
+                <li><a href="donerlist.html">LIST OF DONORS</a></li>
                 <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2024/08/Guide-For-Employees.pdf" target="_blank">GUIDE FOR EMPLOYEES</a></li>
                 <li><a href="certifications.html">CERTIFICATIONS</a></li>
 

@@ -7,7 +7,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Press-coverage | Aakhyaan Foundation</title>
+<title>List of Donors | Aakhyaan Foundation</title>
 <meta name="description" content="Aakhyaan Foundation empowers senior citizens through participation, dignity, healthcare, education, advocacy, social accountability, and inclusive community development across India.">
 <meta name="keywords" content="Aakhyaan Foundation, Senior Citizens, Elder Care, Healthy Ageing, Participation, Dignity, Healthcare, Education, Social Accountability, Inclusive Development, Community Development, Elder Rights, Rajasthan, India">
 <meta name="author" content="Aakhyaan Foundation">
@@ -45,7 +45,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<!-- PRELOAD HERO IMAGE -->
 
+<link rel="preload" as="image" href="img/b3.jpg">
 
 <!-- STRUCTURED DATA (JSON-LD) -->
 <script type="application/ld+json">
@@ -86,7 +88,7 @@
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
-    <link rel="stylesheet" href="css/activity-calendar.css">
+     <link rel="stylesheet" href="css/donerlist.css">
 
 </head>
 
@@ -94,24 +96,40 @@
 
     <div id="header"></div>
 
-  <section class="activity-calendar-section">
-    <div class="activity-calendar-header">
-      <h1>Media Coverage</h1>
-      <p>
-        Explore our latest media coverage, news highlights, and stories showcasing our impact and community initiatives.
-      </p>
-    </div>
 
-    <div class="activity-calendar-grid" id="pressCoverageGrid"></div>
+  <section class="public-donor-section">
+    <div class="public-donor-container">
+
+      <div class="public-donor-header">
+        <span class="donor-subtitle">Our Supporters</span>
+        <h1>List of Donors</h1>
+        <p>
+          We are grateful to all our donors whose valuable support helps us continue our work
+          towards inclusion, dignity and community development.
+        </p>
+
+        <div class="donor-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="donorSearchInput"
+            placeholder="Search donor by name..."
+          />
+        </div>
+      </div>
+
+      <div class="public-donor-grid" id="donorGrid"></div>
+
+      <div class="donor-empty" id="donorEmpty">
+        <i class="fa-regular fa-folder-open"></i>
+        <h3>No donors found</h3>
+        <p>No donor data is available right now.</p>
+      </div>
+
+    </div>
   </section>
 
-  <div class="activity-calendar-image-modal" id="pressCoverageImageModal">
-    <button class="activity-calendar-modal-close" id="pressCoverageModalClose">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
 
-    <img id="pressCoverageModalImage" src="" alt="Press Coverage Image" />
-  </div>
 
 
 
@@ -119,18 +137,23 @@
 <div id="floating-icons"></div>
 
     <!-- JS -->
-     <script src="./config.js"></script>
+     <script src="config.js"></script>
     <script src="js/header.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/login.js"></script>
     <script src="js/signup.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/floating.js"></script>
-    <script src="js/press-coverage.js"></script>
+    <script src="js/donorlist.js"></script>
 
 </body>
 
 </html>
+
+
+
+
+
 
 
 

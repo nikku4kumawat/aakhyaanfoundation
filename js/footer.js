@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <!-- FOOTER BRAND -->
         <div class="footer-brand">
 
-            <img src="/img/logo.gif" alt="Aakhyan Foundation">
+            <img src="/img/af-logo.gif" alt="Aakhyan Foundation">
 
             <p>
              Aakhyaan Foundation (AF), established under Indian Companies Act 2013,

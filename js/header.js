@@ -203,7 +203,7 @@ header.innerHTML += `
                         <li><a href="partnership.html">PARTNERSHIP</a></li>
                         <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2025/03/Vision-Document.pdf"target="_blank">VISION DOCUMENT</a></li>
                         <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
-                        <li><a href="press-coverage.html">PRESS COVERAGE</a></li>
+                        <li><a href="press-coverage.html">MEDIA COVERAGE</a></li>
                         <li><a href="blog.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
                         <li><a href="research.html">RESEARCH & EVIDENCE</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -379,7 +379,7 @@ header.innerHTML += `
                 <li><a href="partnership.html">PARTNERSHIP</a></li>
                 <li><a href="https://aakhyaanfoundation.org/wp-content/uploads/2025/03/Vision-Document.pdf"target="_blank">VISION DOCUMENT</a></li>
                 <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
-                <li><a href="press-coverage.html">PRESS COVERAGE</a></li>
+                <li><a href="press-coverage.html">MEDIA COVERAGE</a></li>
                 <li><a href="blog.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
                 <li><a href="research.html">RESEARCH & EVIDENCE</a></li>
                 <li><a href="gallery.html">Gallery</a></li>

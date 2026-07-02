@@ -88,6 +88,7 @@
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
+    <link rel="stylesheet" href="css/report.css">
 
 </head>
 
@@ -96,7 +97,26 @@
     <div id="header"></div>
 
 
+  <section class="document-section">
+    <div class="document-header">
+      <h1>Policy Documents</h1>
+      <p>
+        View our policy documents, guidelines, and important PDF resources.
+      </p>
+    </div>
 
+    <div class="document-grid" id="policyPublicDocumentGrid"></div>
+  </section>
+
+  <div class="document-pdf-modal" id="policyPublicPdfModal">
+    <button class="document-modal-close" id="policyPublicModalClose">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="document-pdf-box">
+      <iframe id="policyPublicPdfFrame" src=""></iframe>
+    </div>
+  </div>
 
 
 
@@ -105,14 +125,26 @@
 <div id="floating-icons"></div>
 
     <!-- JS -->
+    <script src="policy.js"></script>
     <script src="js/header.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/login.js"></script>
     <script src="js/signup.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/floating.js"></script>
+    <script src="js/policy.js"></script>
 
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+

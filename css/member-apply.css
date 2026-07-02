@@ -1,0 +1,1113 @@
+/*==================================================
+            MEMBER REGISTRATION FORM
+==================================================*/
+
+.member-registration-section{
+    width:100%;
+    padding:70px 0;
+    background:#f5f9fc;
+}
+
+.registration-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+
+/*==================================================
+                HEADING
+==================================================*/
+
+.blue-head{
+    width:100%;
+    background:#1187c9;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.blue-head span{
+    color:#fff;
+}
+
+
+/*==================================================
+                FORM
+==================================================*/
+
+.registration-form{
+    padding:40px;
+}
+
+
+/*==================================================
+                ROW
+==================================================*/
+
+.form-row{
+    display:flex;
+    gap:25px;
+    margin-bottom:25px;
+    align-items:flex-start;
+}
+
+.full-row{
+    display:block;
+}
+
+
+/*==================================================
+            LABEL COLUMN
+==================================================*/
+
+.form-label{
+    width:100%;
+    margin-bottom:10px;
+}
+
+
+/*==================================================
+            GROUP
+==================================================*/
+
+.form-group{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.small-group{
+    max-width:130px;
+}
+
+
+/*==================================================
+                LABEL
+==================================================*/
+
+.registration-form label{
+    font-size:15px;
+    color:#222;
+    margin-bottom:8px;
+    font-weight:600;
+    line-height:24px;
+}
+
+.registration-form label span{
+    color:#1187c9;
+}
+
+
+/*==================================================
+                INPUT
+==================================================*/
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea{
+
+    width:100%;
+    padding:14px 18px;
+
+    border:1px solid #d7d7d7;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.35s;
+
+    background:#fff;
+
+    font-family:inherit;
+
+    box-sizing:border-box;
+}
+
+
+/*==================================================
+            TEXTAREA
+==================================================*/
+
+.registration-form textarea{
+
+    resize:vertical;
+
+    min-height:130px;
+
+}
+
+
+/*==================================================
+            PLACEHOLDER
+==================================================*/
+
+.registration-form input::placeholder,
+.registration-form textarea::placeholder{
+
+    color:#999;
+
+}
+
+
+/*==================================================
+                SELECT
+==================================================*/
+
+.registration-form select{
+
+    cursor:pointer;
+
+}
+
+
+/*==================================================
+            FOCUS EFFECT
+==================================================*/
+
+.registration-form input:focus,
+.registration-form select:focus,
+.registration-form textarea:focus{
+
+    border-color:#1187c9;
+
+    box-shadow:0 0 0 4px rgba(17,135,201,.15);
+
+}
+
+
+/*==================================================
+            FORM FIELD
+==================================================*/
+
+.form-field{
+
+    width:100%;
+
+}
+
+
+/*==================================================
+        REMOVE OLD BORDER LINES
+==================================================*/
+
+.line-all{
+
+    display:none;
+
+}
+
+
+/*==================================================
+            REQUIRED STAR
+==================================================*/
+
+.registration-form label span{
+
+    color:#1187c9;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+            SMOOTH EFFECT
+==================================================*/
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea,
+button{
+
+    transition:.35s ease;
+
+}
+
+/*==================================================
+            UPLOAD SECTION
+==================================================*/
+
+/*==================================================
+            ALL UPLOAD ROW
+==================================================*/
+
+/*==================================================
+            ALL UPLOAD SECTION
+==================================================*/
+
+.all-upload-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:25px;
+
+    width:100%;
+
+}
+
+/*==================================================
+            CARD
+==================================================*/
+
+.upload-item{
+
+    flex:1;
+
+    width:33.33%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/*==================================================
+            LABEL
+==================================================*/
+
+.upload-item>label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+/*==================================================
+            SELECT
+==================================================*/
+
+.upload-item select{
+
+    width:100%;
+
+    height:50px;
+
+    padding:0 15px;
+
+    border:1px solid #d7d7d7;
+
+    border-radius:8px;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+    box-sizing:border-box;
+
+}
+
+/*==================================================
+            EMPTY SPACE
+==================================================*/
+
+.empty-space{
+
+    height:50px;
+
+    margin-bottom:18px;
+
+}
+
+/*==================================================
+            UPLOAD BOX
+==================================================*/
+
+.upload-box{
+
+    width:100%;
+
+    height:180px;
+
+    border:2px dashed #1187c9;
+
+    border-radius:12px;
+
+    background:#f8fcff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-sizing:border-box;
+
+}
+
+.upload-box:hover{
+
+    background:#1187c9;
+
+    border-color:#1187c9;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(17,135,201,.25);
+
+}
+
+/*==================================================
+            ICON
+==================================================*/
+/* ==============================
+   UPLOAD ROW
+============================== */
+
+.all-upload-row {
+  width: 100%;
+  display: grid;
+  margin-top: 28px;
+  align-items: start;
+  grid-template-columns:auto auto auto;
+  column-gap:18px; 
+}
+
+.upload-item {
+  display: grid;
+  grid-template-columns: 135px 160px;
+  gap: 14px;
+  align-items: start;
+}
+
+
+.upload-left {
+  width: 100%;
+}
+
+.upload-left label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3;
+  margin: 0 0 14px;
+}
+
+.upload-left label span {
+  color: #1187c9;
+}
+
+.upload-left select {
+  width: 135px;
+  height: 48px;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #111;
+  background: #fff;
+  outline: none;
+}
+
+.upload-right {
+  width: 160px;
+}
+
+.upload-box {
+  width: 160px;
+  height: 180px;
+  border: 2px dashed #1187c9;
+  border-radius: 10px;
+  background: #f7fbff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.35s;
+  overflow: hidden;
+  text-align: center;
+}
+
+.upload-box:hover {
+  background: #1187c9;
+}
+
+.upload-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #1187c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 13px;
+  transition: 0.35s;
+}
+
+.upload-box:hover .upload-icon {
+  background: #fff;
+}
+
+.upload-icon i {
+  font-size: 26px;
+  color: #fff;
+  transition: 0.35s;
+}
+
+.upload-box:hover .upload-icon i {
+  color: #1187c9;
+}
+
+.upload-box h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #1187c9;
+  font-weight: 700;
+  transition: 0.35s;
+}
+
+.upload-box small {
+  margin-top: 8px;
+  color: #555;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.35s;
+  white-space: normal;
+}
+
+.upload-box:hover h5,
+.upload-box:hover small {
+  color: #fff;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .all-upload-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .upload-item {
+    grid-template-columns: 150px 160px;
+  }
+
+  .upload-right,
+  .upload-box {
+    width: 160px;
+  }
+
+  .upload-box {
+    height: 160px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .all-upload-row{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.upload-item{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.upload-left{
+    width:100%;
+}
+
+.upload-right{
+    width:160px;
+}
+
+.upload-left select{
+    width:160px;
+    margin:10px auto;
+}
+}
+
+
+
+/*==================================================
+            ICON I
+==================================================*/
+
+.upload-icon i{
+
+    font-size:28px;
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.upload-box:hover .upload-icon i{
+
+    color:#1187c9;
+
+}
+
+
+/*==================================================
+            TEXT
+==================================================*/
+
+.upload-box h5{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#1187c9;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.upload-box small{
+
+    margin-top:8px;
+
+    color:#666;
+
+    transition:.35s;
+
+}
+
+.upload-box:hover h5,
+.upload-box:hover small{
+
+    color:#fff;
+
+}
+
+
+/*==================================================
+            DECLARATION
+==================================================*/
+
+.declaration-box{
+
+    margin-top:40px;
+
+    background:#f8fcff;
+
+    border-left:5px solid #1187c9;
+
+    padding:25px;
+
+    border-radius:10px;
+
+}
+
+
+/*==================================================
+            CHECKBOX
+==================================================*/
+
+.checkbox-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+    cursor:pointer;
+
+}
+
+.checkbox-area input{
+
+    width:20px;
+    height:20px;
+
+    accent-color:#1187c9;
+
+    cursor:pointer;
+
+}
+
+.checkbox-area span{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+
+/*==================================================
+            DECLARATION LIST
+==================================================*/
+
+.declaration-box ol{
+
+    margin-left:20px;
+
+}
+
+.declaration-box li{
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    line-height:28px;
+
+    font-size:15px;
+
+}
+
+
+/*==================================================
+            SUBMIT AREA
+==================================================*/
+
+.submit-area{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+
+/*==================================================
+            SUBMIT BUTTON
+==================================================*/
+
+.submit-btn{
+
+    background:#1187c9;
+
+    color:#fff;
+
+    border:none;
+
+    outline:none;
+
+    padding:15px 55px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    letter-spacing:.5px;
+
+}
+
+
+/*==================================================
+            BUTTON HOVER
+==================================================*/
+
+.submit-btn:hover{
+
+    background:#0d6fa7;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(17,135,201,.35);
+
+}
+
+
+/*==================================================
+            BUTTON ACTIVE
+==================================================*/
+
+.submit-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/*==================================================
+            FILE INPUT
+==================================================*/
+
+input[type=file]{
+
+    display:none;
+
+}
+
+
+/*==================================================
+            ANIMATION
+==================================================*/
+
+.upload-box,
+.submit-btn,
+.declaration-box{
+
+    transition:.35s ease;
+
+}
+
+
+/*==================================================
+            LARGE LAPTOP
+==================================================*/
+
+@media(max-width:1200px){
+
+.registration-container{
+    width:95%;
+}
+
+.registration-form{
+    padding:35px;
+}
+
+.blue-head{
+    font-size:28px;
+}
+
+.upload-box{
+    min-height:170px;
+}
+
+}
+
+
+
+/*==================================================
+            TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+.registration-form{
+    padding:30px;
+}
+
+.form-row{
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.form-group{
+    width:100%;
+    flex:100%;
+}
+
+.small-group{
+    max-width:100%;
+}
+
+.upload-box-wrapper{
+    width:100%;
+    flex:100%;
+}
+
+.upload-box{
+    min-height:170px;
+}
+
+.id-upload-row{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.blue-head{
+    font-size:26px;
+    padding:16px;
+}
+
+.submit-btn{
+    width:100%;
+}
+
+}
+
+
+
+/*==================================================
+            MOBILE
+==================================================*/
+
+@media(max-width:768px){
+
+.member-registration-section{
+    padding:50px 0;
+}
+
+.registration-container{
+    width:95%;
+    border-radius:10px;
+}
+
+.registration-form{
+    padding:25px 18px;
+}
+
+.blue-head{
+    font-size:24px;
+    padding:15px;
+}
+
+.form-row{
+    display:block;
+    margin-bottom:18px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-label{
+    margin-bottom:12px;
+}
+
+.registration-form label{
+    font-size:15px;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea{
+
+    font-size:15px;
+
+    padding:13px 15px;
+
+}
+
+.upload-box{
+
+    min-height:150px;
+
+}
+
+.upload-icon{
+
+    width:55px;
+    height:55px;
+
+}
+
+.upload-icon i{
+
+    font-size:24px;
+
+}
+
+.upload-box h5{
+
+    font-size:16px;
+
+}
+
+.upload-box small{
+
+    font-size:13px;
+
+}
+
+.declaration-box{
+
+    padding:18px;
+
+}
+
+.checkbox-area{
+
+    align-items:flex-start;
+
+}
+
+.checkbox-area span{
+
+    font-size:15px;
+    line-height:24px;
+
+}
+
+.declaration-box li{
+
+    font-size:14px;
+    line-height:24px;
+
+}
+
+.submit-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    font-size:17px;
+
+}
+
+}
+
+
+
+/*==================================================
+            SMALL MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+.registration-form{
+    padding:18px 15px;
+}
+
+.blue-head{
+
+    font-size:20px;
+
+}
+
+.registration-form label{
+
+    font-size:14px;
+
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea{
+
+    padding:12px;
+
+    font-size:14px;
+
+}
+
+.upload-box{
+
+    min-height:135px;
+
+}
+
+.upload-icon{
+
+    width:50px;
+    height:50px;
+
+}
+
+.upload-icon i{
+
+    font-size:20px;
+
+}
+
+.upload-box h5{
+
+    font-size:15px;
+
+}
+
+.upload-box small{
+
+    font-size:12px;
+
+}
+
+.declaration-box{
+
+    padding:15px;
+
+}
+
+.declaration-box li{
+
+    font-size:13px;
+
+    line-height:22px;
+
+}
+
+.submit-btn{
+
+    font-size:16px;
+
+    padding:13px;
+
+}
+
+}
+
+
+
+/*==================================================
+            EXTRA SMALL DEVICES
+==================================================*/
+
+@media(max-width:360px){
+
+.blue-head{
+
+    font-size:18px;
+
+}
+
+.registration-form{
+
+    padding:15px 12px;
+
+}
+
+.registration-form label{
+
+    font-size:13px;
+
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea{
+
+    font-size:13px;
+
+}
+
+.submit-btn{
+
+    font-size:15px;
+
+}
+
+}

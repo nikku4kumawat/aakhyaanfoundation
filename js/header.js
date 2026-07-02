@@ -13,7 +13,7 @@ header.innerHTML = `
         <!-- Left Side -->
         <div class="top-left">
 
-            <a href="https://maps.google.com/?q=S-3 SHIV DHAM, VI PL2 SHIV NAGAR-A JHOTWARA JAIPUR-302012" target="_blank">
+            <a href="https://maps.app.goo.gl/7zK1nSQX6dZKrBKd9" target="_blank">
                 <i class="fas fa-location-dot"></i>
                 JHOTWARA JAIPUR
             </a>

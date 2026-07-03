@@ -5,7 +5,7 @@
 footer{
     background:#1187c9;
     color:#fff;
-    padding:50px 6% 15px;
+    padding:50px 6% 10px;
     overflow:hidden;
     font-family:'Poppins',sans-serif;
 }
@@ -13,7 +13,7 @@ footer{
 .footer-grid{
     display:grid;
     grid-template-columns:1.4fr 1fr 1fr 1.2fr;
-    gap:35px;
+    row-gap:10px;
     align-items:flex-start;
 }
 
@@ -26,7 +26,7 @@ footer{
     display:block;
     margin-bottom:10px;
     margin-top: 30px;
-    height: 100px;
+    height: 80px;
     margin-top: -30px;
 }
 

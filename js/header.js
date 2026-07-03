@@ -205,7 +205,7 @@ header.innerHTML += `
                         <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
                         <li><a href="press-coverage.html">MEDIA COVERAGE</a></li>
                         <li><a href="blog.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
-                        <li><a href="research.html">RESEARCH & EVIDENCE</a></li>
+                        <li><a href="#">RESEARCH & EVIDENCE</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
 
                     </ul>
@@ -381,7 +381,7 @@ header.innerHTML += `
                 <li><a href="activity-calendar.html">ACTIVITY CALENDAR</a></li>
                 <li><a href="press-coverage.html">MEDIA COVERAGE</a></li>
                 <li><a href="blog.html">JOURNALING / NEWSLETTERS / BLOGS</a></li>
-                <li><a href="research.html">RESEARCH & EVIDENCE</a></li>
+                <li><a href="#">RESEARCH & EVIDENCE</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
 
             </ul>

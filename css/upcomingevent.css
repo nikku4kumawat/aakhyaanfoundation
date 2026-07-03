@@ -10,10 +10,14 @@ body {
   color: #111827;
 }
 
-.event-hero {
+/* HERO */
+
+.public-event-hero {
   position: relative;
-  min-height: 420px;
-  background-image: url("../img/b3.png");
+  min-height: 430px;
+  background:
+    linear-gradient(rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.35)),
+    url("../img/event-bg.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -21,21 +25,25 @@ body {
   align-items: center;
 }
 
-.event-overlay {
+.public-event-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(2, 6, 23, 0.92), rgba(37, 99, 235, 0.55));
+  background: linear-gradient(
+    90deg,
+    rgba(2, 6, 23, 0.92),
+    rgba(17, 135, 201, 0.62)
+  );
 }
 
-.event-hero-content {
+.public-event-content {
   position: relative;
   z-index: 2;
   width: 100%;
   color: #fff;
-  padding: 70px 0;
+  padding: 80px 0;
 }
 
-.event-label {
+.public-event-label {
   max-width: 1200px;
   margin: 0 auto 25px;
   padding: 0 20px;
@@ -43,36 +51,37 @@ body {
   font-weight: 700;
   color: #bfdbfe;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
-.moving-wrapper {
+.public-moving-wrapper {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   padding: 8px 0;
 }
 
-.moving-track {
+.public-moving-track {
   display: inline-block;
   min-width: 100%;
-  font-size: 52px;
-  font-weight: 800;
-  animation: moveRightToLeft 18s linear infinite;
   padding-left: 100%;
+  font-size: 54px;
+  font-weight: 800;
+  animation: publicMoveLeft 18s linear infinite;
 }
 
-.location-moving .moving-track {
+.public-location-wrapper {
+  margin-top: 10px;
+}
+
+.public-location-track {
   font-size: 24px;
   font-weight: 600;
   color: #e0f2fe;
+  animation-duration: 25s;
 }
 
-.slow {
-  animation-duration: 24s;
-}
-
-@keyframes moveRightToLeft {
+@keyframes publicMoveLeft {
   from {
     transform: translateX(0);
   }
@@ -81,223 +90,225 @@ body {
   }
 }
 
-.event-admin-section {
-  padding: 60px 20px;
+/* MAIN SECTION */
+
+.public-event-section {
+  padding: 70px 20px;
 }
 
-.event-container {
+.public-event-container {
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 28px;
 }
 
-.admin-card {
-  background: #fff;
-  border-radius: 22px;
-  padding: 28px;
-  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+.public-section-head {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.admin-card h2 {
-  font-size: 26px;
-  margin-bottom: 8px;
+.public-section-head span {
+  display: inline-block;
+  color: #1187c9;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.admin-card p {
+.public-section-head h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.public-section-head p {
+  max-width: 650px;
+  margin: auto;
   color: #64748b;
-  line-height: 1.6;
-  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.detail-box {
-  margin-bottom: 22px;
+.public-event-card {
+  background: #fff;
+  border-radius: 26px;
+  padding: 35px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.09);
 }
 
-.detail-box label {
-  display: block;
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 9px;
-}
-
-.input-action {
+.public-location-box {
   display: flex;
-  gap: 10px;
-  align-items: stretch;
-}
-
-.input-action input,
-.input-action textarea {
-  width: 100%;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  padding: 14px 15px;
-  font-size: 15px;
-  outline: none;
-  resize: none;
-}
-
-.input-action textarea {
-  min-height: 92px;
-}
-
-.input-action input:focus,
-.input-action textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
-}
-
-.action-btn {
-  min-width: 52px;
-  height: 52px;
-  border: none;
-  border-radius: 12px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.input-action textarea + .action-btn {
-  height: 52px;
-  align-self: center;
-}
-
-.action-btn.save {
-  background: #2563eb;
-}
-
-.action-btn.delete {
-  background: #ef4444;
-}
-
-.right-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
+  gap: 18px;
   align-items: flex-start;
-  margin-bottom: 20px;
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
+  margin-bottom: 28px;
+  border: 1px solid #dbeafe;
 }
 
-.add-event-btn {
-  border: none;
-  background: #111827;
+.public-icon {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  border-radius: 16px;
+  background: #1187c9;
   color: #fff;
-  padding: 13px 18px;
-  border-radius: 12px;
-  cursor: pointer;
-  font-weight: 700;
-  white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  font-size: 22px;
 }
 
-.event-list {
+.public-location-box h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.public-location-box p {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.public-event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.public-event-item {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  transition: 0.3s ease;
 }
 
-.event-item {
+.public-event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  border-color: #1187c9;
+}
+
+.event-number {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: #1187c9;
+  font-weight: 800;
   display: flex;
-  align-items: stretch;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.event-item textarea {
-  width: 100%;
-  min-height: 76px;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  padding: 14px 15px;
-  font-size: 15px;
-  outline: none;
-  resize: none;
+.event-text h4 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1e293b;
 }
 
-.event-item textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+.public-empty-text {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 25px;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 600;
 }
 
-.event-item .action-btn {
-  height: 76px;
-}
-
-.lock-note {
-  background: #fff7ed;
-  border: 1px solid #fed7aa;
-  color: #c2410c;
-  padding: 14px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-/* Responsive */
+/* RESPONSIVE */
 
 @media (max-width: 992px) {
-  .event-container {
+  .public-moving-track {
+    font-size: 42px;
+  }
+
+  .public-event-list {
     grid-template-columns: 1fr;
   }
 
-  .moving-track {
-    font-size: 42px;
+  .public-section-head h2 {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 768px) {
-  .event-hero {
-    min-height: 360px;
+  .public-event-hero {
+    min-height: 340px;
   }
 
-  .moving-track {
-    font-size: 34px;
+  .public-event-content {
+    padding: 55px 0;
   }
 
-  .location-moving .moving-track {
-    font-size: 19px;
+  .public-moving-track {
+    font-size: 32px;
   }
 
-  .event-admin-section {
-    padding: 40px 15px;
+  .public-location-track {
+    font-size: 18px;
   }
 
-  .admin-card {
+  .public-event-section {
+    padding: 45px 15px;
+  }
+
+  .public-event-card {
     padding: 22px;
+    border-radius: 20px;
   }
 
-  .right-head {
-    flex-direction: column;
+  .public-location-box {
+    padding: 20px;
   }
 
-  .add-event-btn {
-    width: 100%;
-    justify-content: center;
+  .public-section-head h2 {
+    font-size: 28px;
   }
 }
 
 @media (max-width: 480px) {
-  .moving-track {
-    font-size: 28px;
+  .public-event-hero {
+    min-height: 300px;
   }
 
-  .location-moving .moving-track {
-    font-size: 17px;
+  .public-event-label {
+    font-size: 14px;
   }
 
-  .input-action,
-  .event-item {
-    gap: 8px;
+  .public-moving-track {
+    font-size: 25px;
   }
 
-  .action-btn {
-    min-width: 48px;
+  .public-location-track {
+    font-size: 16px;
   }
 
-  .admin-card h2 {
-    font-size: 22px;
+  .public-section-head h2 {
+    font-size: 24px;
+  }
+
+  .public-section-head p {
+    font-size: 14px;
+  }
+
+  .public-location-box {
+    flex-direction: column;
+  }
+
+  .public-event-item {
+    padding: 18px;
+  }
+
+  .event-text h4 {
+    font-size: 16px;
   }
 }

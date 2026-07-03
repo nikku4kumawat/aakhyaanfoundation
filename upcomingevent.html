@@ -98,82 +98,55 @@
     <div id="header"></div>
 
 
-  <section class="event-hero">
-    <div class="event-overlay"></div>
+  <section class="public-event-hero">
+    <div class="public-event-overlay"></div>
 
-    <div class="event-hero-content">
-      <p class="event-label">Upcoming Event</p>
+    <div class="public-event-content">
+      <p class="public-event-label">Upcoming Event</p>
 
-      <div class="moving-wrapper">
-        <div class="moving-track" id="headlineMarquee">
-          No upcoming event added yet
+      <div class="public-moving-wrapper">
+        <div class="public-moving-track" id="headlineMarquee">
+          Loading upcoming events...
         </div>
       </div>
 
-      <div class="moving-wrapper location-moving">
-        <div class="moving-track slow" id="locationMarquee">
-          Location will appear here
+      <div class="public-moving-wrapper public-location-wrapper">
+        <div class="public-moving-track public-location-track" id="locationMarquee">
+          Loading location...
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="event-admin-section">
-    <div class="event-container">
+  <section class="public-event-section">
+    <div class="public-event-container">
 
-      <div class="admin-left admin-card">
-        <h2>Event Details</h2>
-        <p>Location, phone number aur email yahan se add/save/delete kar sakte ho.</p>
-
-        <div class="detail-box">
-          <label>Event Location</label>
-          <div class="input-action">
-            <textarea id="locationInput" placeholder="Enter event location"></textarea>
-            <button id="locationBtn" class="action-btn save">
-              <i class="fa-solid fa-floppy-disk"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="detail-box">
-          <label>Phone Number</label>
-          <div class="input-action">
-            <input type="text" id="phoneInput" placeholder="Enter phone number">
-            <button id="phoneBtn" class="action-btn save">
-              <i class="fa-solid fa-floppy-disk"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="detail-box">
-          <label>Email Address</label>
-          <div class="input-action">
-            <input type="email" id="emailInput" placeholder="Enter email address">
-            <button id="emailBtn" class="action-btn save">
-              <i class="fa-solid fa-floppy-disk"></i>
-            </button>
-          </div>
-        </div>
+      <div class="public-section-head">
+        <span>Events</span>
+        <h2>Our Upcoming Events</h2>
+        <p>Stay updated with the latest upcoming activities and event locations.</p>
       </div>
 
-      <div class="admin-right admin-card">
-        <div class="right-head">
-          <div>
-            <h2>Event Headlines</h2>
-            <p>Add multiple upcoming event headlines.</p>
+      <div class="public-event-card">
+        <div class="public-location-box">
+          <div class="public-icon">
+            <i class="fa-solid fa-location-dot"></i>
           </div>
 
-          <button class="add-event-btn" id="addEventBtn">
-            <i class="fa-solid fa-plus"></i>
-            Add Event
-          </button>
+          <div>
+            <h3>Event Location</h3>
+            <p id="eventLocationText">Location will appear here</p>
+          </div>
         </div>
 
-        <div class="event-list" id="eventList"></div>
+        <div class="public-event-list" id="publicEventList">
+          <p class="public-empty-text">Loading events...</p>
+        </div>
       </div>
 
     </div>
-  </section> -->
+  </section>
+
 
 
 
@@ -194,3 +167,6 @@
 </body>
 
 </html>
+
+
+

@@ -18,9 +18,9 @@ header.innerHTML = `
                 JHOTWARA JAIPUR
             </a>
 
-            <a href="tel:+918239707266">
+            <a href="tel:+919001123836">
                 <i class="fas fa-phone"></i>
-                +91-8239707266
+                +91 9001123836
             </a>
 
             <a href="mailto:connect@aakhyaanfoundation.org">
@@ -43,7 +43,7 @@ header.innerHTML = `
 
 
              <!-- WhatsApp -->
-                <a href="https://api.whatsapp.com/send?phone=918239707266"
+                <a href="https://api.whatsapp.com/send?phone=919001123836"
                    target="_blank"
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>

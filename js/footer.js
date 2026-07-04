@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             <div class="contact-item">
                 <i class="fa-solid fa-location-dot"></i>
-                <a href="https://www.google.com/maps/place/26%C2%B053'55.5%22N+75%C2%B046'57.3%22E/@26.8987503,75.779995,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.8987503!4d75.7825699?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <a href="https://maps.app.goo.gl/7zK1nSQX6dZKrBKd9" target="_blank">
                     Plot No. 18, Nandpuri Colony, Hawa Sadak, 
                     22 Godam, Jaipur (Raj) - 302019
                 </a>
@@ -86,13 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
 
             <div class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+918239707266">
-                    +91 8239707266
-                </a>
-            </div>
-
-              <div class="contact-item">
                 <i class="fa-solid fa-phone"></i>
                 <a href="tel:+919001123836">
                     +91 9001123836

@@ -48,6 +48,11 @@ header.innerHTML = `
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
 
+                <!-- Call -->
+                <a href="tel:+919001123836" target="_blank">
+                   <i class="fa-solid fa-phone"></i>
+                </a>
+
             <a href="https://www.linkedin.com/company/aakhyaan-foundation/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
             </a>

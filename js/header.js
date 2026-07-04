@@ -42,6 +42,11 @@ header.innerHTML = `
             </a>
 
 
+             <a href="https://www.linkedin.com/company/aakhyaan-foundation/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+
              <!-- WhatsApp -->
                 <a href="https://api.whatsapp.com/send?phone=919001123836"
                    target="_blank"
@@ -53,9 +58,7 @@ header.innerHTML = `
                    <i class="fa-solid fa-phone"></i>
                 </a>
 
-            <a href="https://www.linkedin.com/company/aakhyaan-foundation/" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
+           
 
 
 

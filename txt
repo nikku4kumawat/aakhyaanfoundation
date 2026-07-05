@@ -131,3 +131,262 @@
                     Sign Up
                </a>
            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="donation-section">
+
+    <div class="donation-container">
+
+        <div class="donation-wrapper">
+
+            <!-- ==========================
+                    LEFT FORM
+            =========================== -->
+
+            <div class="donation-form">
+
+                <div class="donation-title">
+
+                    <p>
+                        You can make your donation through this form.
+                    </p>
+
+                </div>
+
+                <form>
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label>Full Name <span>*</span></label>
+
+                        <input type="text" placeholder="Enter Full Name">
+
+                    </div>
+
+                    <!-- Mobile -->
+
+                    <div class="form-group">
+
+                        <label>Mobile Number <span>*</span></label>
+
+                        <input type="tel" placeholder="Enter Mobile Number">
+
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label>Email</label>
+
+                        <input type="email" placeholder="Enter Email">
+
+                    </div>
+
+                    <!-- PAN -->
+
+                    <div class="form-group">
+
+                        <label>PAN Card Number</label>
+
+                        <input type="text" placeholder="Enter PAN Number">
+
+                    </div>
+
+                    <!-- Address -->
+
+                    <div class="form-group">
+
+                        <label>Address <span>*</span></label>
+
+                        <textarea placeholder="Enter Address"></textarea>
+
+                    </div>
+
+                    <!-- Photo -->
+
+                    <div class="form-group">
+
+                        <label>Photo (Optional)</label>
+
+                        <div class="upload-box-small">
+
+                            <i class="fas fa-plus"></i>
+
+                            <p>Upload Photo</p>
+
+                            <input type="file">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Amount -->
+
+                    <div class="form-group">
+
+                        <label>Donation Amount <span>*</span></label>
+
+                        <input type="number" placeholder="₹ Enter Amount">
+
+                    </div>
+
+                    <!-- Document -->
+
+                    <div class="form-group">
+
+                        <label>Document Type <span>*</span></label>
+
+                        <select>
+
+                            <option>Select Document</option>
+
+                            <option>Aadhar Card</option>
+
+                            <option>PAN Card</option>
+
+                            <option>Driving Licence</option>
+
+                            <option>Passport</option>
+
+                            <option>Voter ID</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Document Number -->
+
+                    <div class="form-group full-width">
+
+                        <label>Document Number <span>*</span></label>
+
+                        <input type="text" placeholder="Enter Document Number">
+
+                    </div>
+
+                    <!-- Front -->
+
+                    <div class="form-group">
+
+                        <label>Document Front</label>
+
+                        <div class="upload-box-small">
+
+                            <i class="fas fa-plus"></i>
+
+                            <p>Upload Front</p>
+
+                            <input type="file">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Back -->
+
+                    <div class="form-group">
+
+                        <label>Document Back</label>
+
+                        <div class="upload-box-small">
+
+                            <i class="fas fa-plus"></i>
+
+                            <p>Upload Back</p>
+
+                            <input type="file">
+
+                        </div>
+
+                    </div>
+
+                    <button class="donate-btn">
+
+                        Donate Now
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- ==========================
+                    RIGHT CARD
+            =========================== -->
+
+            <div class="donation-upload">
+
+                <div class="donation-card">
+
+                    <!-- TOP -->
+
+                    <div class="donation-card-top">
+
+                        <div class="donation-card-top">
+
+                           <div class="upi-row">
+                              <span>Name :</span>
+                              <strong>Aakhyaan Foundation</strong>
+                           </div>
+                           <div class="upi-row">
+                               <span>UPI ID :</span>
+                               <strong>9001123836@sbi</strong>
+                           </div>
+                       </div>
+
+                    </div>
+
+                    <!-- MIDDLE -->
+
+                    <div class="donation-card-body">
+
+                        <!-- <h3>Scan & Pay Using Any UPI App</h3> -->
+
+                        <img src="img/donation.jpeg"
+                             class="qr-image"
+                             alt="QR Code">
+
+                        <div class="upi-apps">
+
+                            <img src="img/gpay.png" alt="Google Pay">
+
+                            <img src="img/phonepe.png" alt="PhonePe">
+
+                            <img src="img/paytm.png" alt="Paytm">
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- FOOTER -->
+
+                    <div class="donation-card-footer">
+
+                        Thank you for your support!
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

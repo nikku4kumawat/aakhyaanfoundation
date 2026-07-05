@@ -68,7 +68,7 @@
     transform:translateY(-12px);
 }
 
-.about-box i{
+/* .about-box i{
     width:65px;
     height:65px;
     line-height:65px;
@@ -79,11 +79,41 @@
     margin-bottom:15px;
     transition:.8s;
     display:inline-block;
+} */
+ .about-box i{
+    width:65px;
+    height:65px;
+    line-height:65px;
+    border-radius:50%;
+    background:#1187c9;
+    color:#fff;
+    font-size:35px;
+    margin-bottom:15px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    animation:iconFloat 2.5s ease-in-out infinite;
 }
 
-.about-box:hover i{
-    transform:rotateY(180deg);
+@keyframes iconFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
 }
+
+/* .about-box:hover i{
+    transform:rotateY(180deg);
+} */
 
 .about-box h4{
     color:#222;

@@ -70,7 +70,7 @@
 
 .overview-title span{
 
-    color:#0d6efd;
+    color:#1187c9;
 
 }
 
@@ -85,53 +85,6 @@
     margin-bottom:22px;
 
 }
-
-
-/*=========================================
-            BUTTON
-=========================================*/
-
-.overview-btns{
-
-    margin-top:35px;
-
-}
-
-.overview-btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:15px 40px;
-
-    text-decoration:none;
-
-    background:#0d6efd;
-
-    color:#fff;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    transition:.4s;
-
-    box-shadow:0 15px 35px rgba(13,110,253,.25);
-
-}
-
-.overview-btn:hover{
-
-    background:#0056d6;
-
-    transform:translateY(-6px);
-
-}
-
-
 
 /*=========================================
             RIGHT IMAGE
@@ -419,6 +372,260 @@
     bottom:-180px;
 
 }
+
+
+
+/*=========================================
+        APPROACH IMAGE SECTION
+==========================================*/
+
+.approach-image-section{
+
+    margin:70px 0;
+
+}
+
+.approach-image-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+
+}
+
+
+/* IMAGE BOX */
+
+.approach-image-item{
+
+    position:relative;
+    height:260px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    background:#fff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:.8s;
+
+}
+
+.approach-image-item.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.approach-image-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s ease;
+
+}
+
+
+/* Hover Zoom */
+
+.approach-image-item:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.approach-image-item:hover{
+
+    box-shadow:0 20px 40px rgba(17,135,201,.18);
+
+}
+
+
+
+/*=========================================
+            POPUP
+==========================================*/
+
+.approach-popup{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(10,15,30,.85);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+.approach-popup.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.approach-popup img{
+
+    width:75%;
+
+    max-width:900px;
+
+    max-height:85vh;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    padding:10px;
+
+    transform:scale(.8);
+
+    transition:.4s;
+
+}
+
+.approach-popup.show img{
+
+    transform:scale(1);
+
+}
+
+
+/* CLOSE */
+
+.approach-popup-close{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    width:48px;
+
+    height:48px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#222;
+
+    transition:.3s;
+
+}
+
+.approach-popup-close:hover{
+
+    background:#1187c9;
+
+    color:#fff;
+
+}
+
+
+/*=========================================
+            RESPONSIVE
+==========================================*/
+
+@media(max-width:991px){
+
+    .approach-image-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .approach-image-item{
+
+        height:230px;
+
+    }
+
+    .approach-popup img{
+
+        width:90%;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .approach-image-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .approach-image-item{
+
+        height:220px;
+
+    }
+
+    .approach-popup img{
+
+        width:95%;
+
+    }
+
+    .approach-popup-close{
+
+        top:15px;
+
+        right:15px;
+
+    }
+
+}
+
+
+
+
 
 
 

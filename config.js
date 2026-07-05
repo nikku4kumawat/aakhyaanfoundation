@@ -1,4 +1,4 @@
-const BASE_URL = "https://akhyanfoundationback.onrender.com";
+const BASE_URL = "https://aakhyaanfoundationadminbackend.onrender.com";
 
 const API_PATHS = {
   ACTIVITY_CALENDAR: `${BASE_URL}/api/activity-calendar`,

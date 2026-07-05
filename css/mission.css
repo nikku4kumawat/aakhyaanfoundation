@@ -91,7 +91,7 @@
           CARD
 ==================================*/
 
-.mv-card{
+/* .mv-card{
 
     background:#fff;
     border-radius:22px;
@@ -103,6 +103,22 @@
     opacity:0;
     transform:translateY(60px);
 
+} */
+
+.mv-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+
+    position:relative;
+    overflow:hidden;
+    transition:.45s;
+    opacity:0;
+    transform:translateY(60px);
 }
 
 .mv-card.show{
@@ -229,6 +245,7 @@
 }
 
 
+
 /*==================================
           IMAGE
 ==================================*/
@@ -342,6 +359,15 @@ font-size:30px;
 height:230px;
 
 }
+
+}
+
+/* Desktop only */
+@media (min-width: 993px){
+
+    .vision-card .mv-image{
+        margin-top: 170px; /* adjust according to alignment */
+    }
 
 }
 

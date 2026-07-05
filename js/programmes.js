@@ -1,32 +1,84 @@
+/*=========================================
+    OUR PROGRAMMES ANIMATION
+=========================================*/
 
-const programmeElements = document.querySelectorAll(
-    '.animate-title, .animate-text, .programme-card'
-);
+// Heading Animation
+const titleObserver = new IntersectionObserver((entries) => {
 
-const programmeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
 
-    entries.forEach((entry) => {
+        if(entry.isIntersecting){
 
-        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
 
-            entry.target.classList.add('show');
+        }else{
 
-        } else {
+            entry.target.classList.remove("show");
 
-            
-            entry.target.classList.remove('show');
         }
 
     });
 
-}, {
-    threshold: 0.25
+},{
+    threshold:0.3
 });
 
-programmeElements.forEach((element) => {
-    programmeObserver.observe(element);
+document.querySelectorAll(".zoom-title").forEach(title=>{
+
+    titleObserver.observe(title);
+
 });
 
 
 
+// Grid Animation (Focus Area & Target Group Alag Alag)
 
+const gridObserver = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        const cards = entry.target.querySelectorAll(".animate-card");
+
+        if(entry.isIntersecting){
+
+            cards.forEach((card,index)=>{
+
+                setTimeout(()=>{
+
+                    card.classList.add("show");
+
+                },index*180);
+
+            });
+
+        }else{
+
+            cards.forEach(card=>{
+
+                card.classList.remove("show");
+
+            });
+
+        }
+
+    });
+
+},{
+    threshold:0.25
+});
+
+
+// Focus Area Grid Observe
+document.querySelectorAll(".focus-grid").forEach(grid=>{
+
+    gridObserver.observe(grid);
+
+});
+
+
+// Target Group Grid Observe
+document.querySelectorAll(".target-grid").forEach(grid=>{
+
+    gridObserver.observe(grid);
+
+});

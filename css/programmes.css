@@ -1,245 +1,570 @@
-
-/* ==========================
-   OUR PROGRAMMES START
-========================== */
+/*=========================================
+        OUR PROGRAMMES START
+=========================================*/
 
 .programmes-section{
+
     position:relative;
-    padding:70px 6%;
+
     overflow:hidden;
+
+    padding:60px 6%;
 
     background:
     linear-gradient(
-        rgba(0,119,255,0.20),
-        rgba(0,198,255,0.15)
-    ),
+    rgba(0,119,255,.18),
+    rgba(0,198,255,.12)),
     url("../img/program-bg.jpg");
 
     background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
 
-/* Overlay hata diya kyunki gradient use kar rahe hain */
-.programmes-section .overlay{
-    display:none;
+    background-position:center;
+
+    background-repeat:no-repeat;
+
 }
 
 .programmes-section .container{
-    position:relative;
-    z-index:2;
+
+    max-width:1300px;
+
+    margin:auto;
+
 }
 
-/* Heading */
+/*=========================================
+        MAIN TITLE
+=========================================*/
 
 .section-title{
+
     text-align:center;
-    font-size:48px;
-    font-weight:800;
-    color:white;
-    margin-bottom:15px;
-    letter-spacing:2px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#1187c9;
+
     text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    margin-bottom:18px;
+
 }
 
-/* Paragraph */
+/*=========================================
+        SUB TITLES
+=========================================*/
 /* 
-.section-desc{
-    max-width:900px;
-    margin:auto;
+.programme-subtitle{
+
     text-align:center;
-    color:#111;
-    line-height:1.8;
-    font-size:18px;
-    font-weight:500;
-    margin-bottom:50px;
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    margin:28px 0 35px;
+
+    line-height:1.2;
+
 } */
 
-/* Grid */
 
-.programmes-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
+.programme-subtitle{
+
+    position:relative;
+
+    display:table;
+
+    margin:35px auto;
+
+    padding:12px 35px;
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    line-height:1.2;
+
+    background:rgba(0,0,0,0.65);
+
+    border-radius:12px;
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
 }
 
-/* Cards */
+
+.programme-subtitle span{
+
+    color:#1187c9;
+
+    margin-right:8px;
+
+}
+
+/*=========================================
+        GRID
+=========================================*/
+
+.programmes-grid{
+
+    display:grid;
+
+    justify-content:center;
+
+    align-items:stretch;
+
+    gap:22px;
+
+    margin:auto;
+
+}
+
+/* Focus Area */
+
+.focus-grid{
+
+    grid-template-columns:repeat(4,230px);
+
+    margin-bottom:55px;
+
+}
+
+/* Target Group */
+
+.target-grid{
+
+    grid-template-columns:repeat(3,230px);
+
+    margin-bottom:55px;
+
+}
+
+/*=========================================
+        CARD
+=========================================*/
 
 .programme-card{
-    display:flex;
-    align-items:center;
-    gap:18px;
 
-    padding:20px 25px;
+    background:rgba(255,255,255,.92);
 
-    background:rgba(255,255,255,0.88);
-
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(10px);
 
     border-radius:16px;
 
-    transition:0.5s ease;
+    padding:18px;
+
+    min-height:125px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.45s ease;
 
     opacity:0;
 
-    min-height:120px;
+    cursor:pointer;
+
 }
 
-/* Hover Effect */
+/*=========================================
+        CARD TOP
+=========================================*/
 
-.programme-card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 15px 35px rgba(0,119,255,0.35);
+.card-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:16px;
+
 }
 
-/* Icon */
+/*=========================================
+        ICON
+=========================================*/
 
-.icon{
-    min-width:75px;
-    width:75px;
-    height:75px;
+.card-top i{
+
+    width:48px;
+
+    height:48px;
 
     border-radius:50%;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     background:linear-gradient(
-        135deg,
-        #0077ff,
-        #00c6ff
+    135deg,
+    #0077ff,
+    #1187c9
     );
 
     color:#fff;
-    font-size:30px;
 
-    transition:0.8s ease;
+    font-size:19px;
+
+    transition:.8s ease;
+
 }
 
-/* Icon Rotate */
+/*=========================================
+        CARD HEADING
+=========================================*/
 
-.programme-card:hover .icon{
-    transform:rotateY(360deg);
-}
+.card-top h4{
 
-/* Content */
-
-.content h3{
-    color:#111;
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:8px;
-}
-
-.content p{
-    color:#444;
-    line-height:1.6;
     margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#111;
+
 }
 
-/* ANIMATIONS */
+/*=========================================
+        CARD DESCRIPTION
+=========================================*/
 
-.animate-title{
+.programme-card p{
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    color:#555;
+
+}
+
+/*=========================================
+        CARD HOVER
+=========================================*/
+
+.programme-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,119,255,.28);
+
+}
+
+.programme-card:hover .card-top i{
+
+    transform:rotateY(360deg);
+
+}
+
+/*=========================================
+        INTERNSHIP TITLE
+=========================================*/
+
+.internship-title{
+
+    margin-top:25px;
+
+    margin-bottom:0;
+
+}
+
+/*=========================================
+        ANIMATIONS
+=========================================*/
+
+/* Focus Area / Target Group / Internship */
+
+.zoom-title{
+
     opacity:0;
-    transform:scale(.7);
-    transition:1s;
-}
 
-.animate-title.show{
-    opacity:1;
-    transform:scale(1);
-}
+    transform:scale(.65);
 
-.animate-text{
-    opacity:0;
-    transform:translateY(50px);
-    transition:1s;
-}
-
-.animate-text.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-.left-card{
-    transform:translateX(-120px);
-}
-
-.right-card{
-    transform:translateX(120px);
-}
-
-.programme-card.show{
-    opacity:1;
-    transform:translateX(0);
     transition:1s ease;
+
 }
 
-/*RESPONSIVE */
+.zoom-title.show{
 
-@media(max-width:991px){
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/* Cards */
+
+.animate-card{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:all .8s ease;
+
+}
+
+.animate-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Animation Delay */
+
+.animate-card:nth-child(1){
+
+    transition-delay:.1s;
+
+}
+
+.animate-card:nth-child(2){
+
+    transition-delay:.25s;
+
+}
+
+.animate-card:nth-child(3){
+
+    transition-delay:.4s;
+
+}
+
+.animate-card:nth-child(4){
+
+    transition-delay:.55s;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+/* Laptop */
+
+@media(max-width:1200px){
+
+    .focus-grid{
+
+        grid-template-columns:repeat(2,250px);
+
+    }
+
+    .target-grid{
+
+        grid-template-columns:repeat(2,250px);
+
+    }
+
+    .target-grid .programme-card:last-child{
+
+        grid-column:1/3;
+
+        justify-self:center;
+
+    }
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .programmes-section{
+
+        padding:60px 25px;
+
+    }
 
     .section-title{
-        font-size:40px;
+
+        font-size:17px;
+
     }
 
-    .programmes-grid{
-        grid-template-columns:1fr;
+    .programme-subtitle{
+
+        font-size:38px;
+
     }
+
+    .focus-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .target-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .target-grid .programme-card:last-child{
+
+        grid-column:1/3;
+
+        width:250px;
+
+        justify-self:center;
+
+    }
+
 }
+
+/* Mobile */
 
 @media(max-width:768px){
 
     .programmes-section{
-        padding:60px 20px;
+
+        padding:55px 18px;
+
     }
 
     .section-title{
-        font-size:34px;
-        color:#0077ff;
+
+        font-size:16px;
+
+        letter-spacing:2px;
+
     }
 
-    .section-desc{
-        font-size:15px;
-        color:#111;
+    .programme-subtitle{
+
+        font-size:30px;
+
+        margin:25px 0;
+
+    }
+
+    .focus-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .target-grid{
+
+        grid-template-columns:1fr;
+
     }
 
     .programme-card{
-        flex-direction:column;
-        text-align:center;
+
+        width:100%;
+
+        min-height:auto;
+
     }
 
-    .content h3{
-        font-size:22px;
+    .target-grid .programme-card:last-child{
+
+        width:100%;
+
+        grid-column:auto;
+
     }
+
+    .card-top{
+
+        gap:10px;
+
+    }
+
+    .card-top i{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:18px;
+
+    }
+
+    .card-top h4{
+
+        font-size:17px;
+
+    }
+
+    .programme-card p{
+
+        font-size:13px;
+
+    }
+
 }
+
+/* Small Mobile */
 
 @media(max-width:480px){
 
     .section-title{
-        font-size:28px;
-        color:#0077ff;
+
+        font-size:15px;
+
     }
 
-    .section-desc{
-        color:#111;
+    .programme-subtitle{
+
+        font-size:24px;
+
     }
 
-    .icon{
-        width:65px;
-        height:65px;
-        min-width:65px;
-        font-size:26px;
+    .programme-card{
+
+        padding:16px;
+
     }
 
-    .content h3{
-        font-size:20px;
+    .card-top i{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:17px;
+
     }
+
+    .card-top h4{
+
+        font-size:16px;
+
+    }
+
+    .programme-card p{
+
+        font-size:12px;
+
+        line-height:1.5;
+
+    }
+
 }
 
-/* ==========================
-   OUR PROGRAMMES END
-========================== */
-
+/*=========================================
+        OUR PROGRAMMES END
+=========================================*/
 

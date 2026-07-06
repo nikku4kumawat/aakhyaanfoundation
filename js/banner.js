@@ -1,4 +1,4 @@
-const BASE_URL = "https://akhyanfoundationback.onrender.com";
+const BASE_URL = "https://aakhyaanfoundationadminbackend.onrender.com";
 
 const API_PATHS = {
     UPCOMING_EVENT: `${BASE_URL}/api/upcoming-events`,

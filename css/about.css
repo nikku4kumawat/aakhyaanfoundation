@@ -47,7 +47,7 @@
 
 /* BOXES */
 
-/* .about-boxes{
+ /* .about-boxes{
     display:flex;
     gap:20px;
     margin-bottom:35px;
@@ -105,295 +105,24 @@
     font-size:16px;
     font-weight:700;
     line-height:1.5;
-} */
+}  */
 
 
-/*=========================================
-        ABOUT CIRCLE DESIGN
-=========================================*/
-
-.about-circle-wrapper{
-    position:relative;
+.about-feature-image{
     width:100%;
-    height:340px;
-    margin:40px 0 50px;
+    height:170px;   /* 3 cards jitni height */
+    margin-bottom:35px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-/*==========================
-        SVG LINE
-===========================*/
-
-.about-svg{
-    position:absolute;
-    top:0;
-    left:0;
+.about-feature-image img{
     width:100%;
     height:100%;
-    overflow:visible;
-    z-index:1;
+    object-fit:cover;
+    display:block;
 }
-
-/*==========================
-        CIRCLES
-===========================*/
-
-.circle-card{
-    position:absolute;
-    width:150px;
-    height:150px;
-    border:4px solid #111;
-    border-radius:50%;
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index:5;
-    transition:.4s;
-}
-
-.circle-card:hover{
-    transform:scale(1.05);
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.circle-inner{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-}
-
-/*==========================
-        ICON
-===========================*/
-
-.circle-inner i{
-
-    font-size:40px;
-    color:#1187c9;
-
-    margin-bottom:12px;
-
-    animation:iconFloat 2.5s ease-in-out infinite;
-}
-
-@keyframes iconFloat{
-
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-8px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
-
-}
-
-.circle-inner h4{
-
-    font-size:22px;
-
-    font-weight:700;
-
-    color:#333;
-
-}
-
-/*==========================
-        POSITION
-===========================*/
-
-.circle-one{
-
-    left:10px;
-
-    top:15px;
-
-}
-
-.circle-two{
-
-    left:50%;
-
-    top:10px;
-
-    transform:translateX(-50%);
-
-}
-
-.circle-three{
-
-    right:10px;
-
-    top:10px;
-
-}
-
-/*==========================
-        DOTS
-===========================*/
-
-.path-dot{
-
-    position:absolute;
-
-    width:18px;
-
-    height:18px;
-
-    border:4px solid #666;
-
-    border-radius:50%;
-
-    background:#fff;
-
-    z-index:8;
-
-    transition:.4s;
-
-}
-
-/* Left Start */
-
-.dot-start{
-
-    left:-20px;
-
-    top:80px;
-
-}
-
-/* Between 1 & 2 */
-
-.dot-middle-one{
-
-    left:31.5%;
-
-    top:80px;
-
-}
-
-/* Between 2 & 3 */
-
-.dot-middle-two{
-
-    right:31.5%;
-
-    top:80px;
-
-}
-
-/* Last */
-
-.dot-end{
-
-    right:-20px;
-
-    top:80px;
-
-}
-
-/*==========================
-    MOVING DOT
-===========================*/
-
-#movingDot{
-
-    filter:drop-shadow(0 0 8px rgba(0,0,0,.35));
-
-}
-
-/*==========================
-    RESPONSIVE
-===========================*/
-
-@media(max-width:991px){
-
-.about-circle-wrapper{
-
-height:auto;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:35px;
-
-}
-
-.about-svg{
-
-display:none;
-
-}
-
-.circle-card{
-
-position:relative;
-
-left:auto;
-
-right:auto;
-
-top:auto;
-
-transform:none;
-
-}
-
-.path-dot{
-
-display:none;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.circle-card{
-
-width:125px;
-
-height:125px;
-
-}
-
-.circle-inner i{
-
-font-size:32px;
-
-}
-
-.circle-inner h4{
-
-font-size:18px;
-
-}
-
-}
-#aboutProgress{
-    stroke:#111;
-    stroke-width:5;
-    fill:none;
-    stroke-linecap:round;
-}
-
-#aboutPath{
-    stroke:#9aa3b2;
-    stroke-width:5;
-    fill:none;
-    stroke-linecap:round;
-    stroke-dasharray:12 14;
-}
-
-
 
 
 

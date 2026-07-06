@@ -176,6 +176,25 @@
             SMALL UPLOAD BOX
 ==================================================*/
 
+
+
+.upload-preview{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+}
+
+
 .upload-box-small{
 
     width:180px;
@@ -828,19 +847,3 @@
 
 
 
-
-.upload-preview{
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    border-radius:12px;
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-}

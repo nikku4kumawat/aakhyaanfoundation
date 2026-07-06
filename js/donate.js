@@ -26,14 +26,14 @@ function updatePreview(inputId, previewId, textId, iconId, defaultText) {
 
                 icon.style.display = "none";
                 text.style.position = "absolute";
-text.style.bottom = "0";
-text.style.left = "0";
-text.style.width = "100%";
-text.style.background = "rgba(0,0,0,0.6)";
-text.style.color = "#fff";
-text.style.padding = "6px";
-text.style.fontSize = "12px";
-text.style.margin = "0";
+                text.style.bottom = "0";
+                text.style.left = "0";
+                text.style.width = "100%";
+                text.style.background = "rgba(0,0,0,0.6)";
+                text.style.color = "#fff";
+                text.style.padding = "6px";
+                text.style.fontSize = "12px";
+                text.style.margin = "0";
 
             };
 

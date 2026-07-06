@@ -831,15 +831,16 @@
 
 .upload-preview{
 
-    width:90px;
-    height:90px;
+    width:100%;
+    height:100%;
 
     object-fit:cover;
 
-    border-radius:10px;
+    border-radius:12px;
 
-    margin-bottom:10px;
+    position:absolute;
 
-    border:1px solid #ddd;
+    top:0;
+    left:0;
 
 }

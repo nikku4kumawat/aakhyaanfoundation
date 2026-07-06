@@ -1,88 +1,75 @@
-// const donationForm = document.getElementById("donationForm");
-
-// if (donationForm) {
-//   donationForm.addEventListener("submit", async (e) => {
-//     e.preventDefault();
-
-//     const submitBtn = donationForm.querySelector(".donate-btn");
-
-//     submitBtn.disabled = true;
-//     submitBtn.innerText = "Submitting...";
-
-//     try {
-//       const formData = new FormData();
-
-//       formData.append("fullName", document.getElementById("fullName").value.trim());
-//       formData.append("mobile", document.getElementById("mobile").value.trim());
-//       formData.append("email", document.getElementById("email").value.trim());
-//       formData.append("panNumber", document.getElementById("panNumber").value.trim());
-//       formData.append("address", document.getElementById("address").value.trim());
-//       formData.append("donationAmount", document.getElementById("donationAmount").value);
-//       formData.append("documentType", document.getElementById("documentType").value);
-//       formData.append("documentNumber", document.getElementById("documentNumber").value.trim());
-
-//       const photo = document.getElementById("photo").files[0];
-//       const documentFront = document.getElementById("documentFront").files[0];
-//       const documentBack = document.getElementById("documentBack").files[0];
-
-//       if (photo) formData.append("photo", photo);
-//       if (documentFront) formData.append("documentFront", documentFront);
-//       if (documentBack) formData.append("documentBack", documentBack);
-
-//       const response = await fetch(API_PATHS.DONATE, {
-//         method: "POST",
-//         body: formData,
-//       });
-
-//       const data = await response.json();
-
-//       if (!response.ok) {
-//         alert(data.message || "Something went wrong");
-//         return;
-//       }
-
-//       alert("Donation form submitted successfully!");
-//       donationForm.reset();
-
-//     } catch (error) {
-//       console.log("DONATION FORM ERROR:", error);
-//       alert("Server error. Please try again.");
-//     } finally {
-//       submitBtn.disabled = false;
-//       submitBtn.innerText = "Donate Now";
-//     }
-//   });
-// }
-
-
-
-
-
-
 const donationForm = document.getElementById("donationForm");
 
 /*=========================================
-        SHOW SELECTED FILE NAME
+        IMAGE PREVIEW + FILE NAME
 =========================================*/
 
-function updateFileName(inputId, textId, defaultText) {
-    const input = document.getElementById(inputId);
-    const text = document.getElementById(textId);
+function updatePreview(inputId, previewId, textId, iconId, defaultText) {
 
-    if (!input || !text) return;
+    const input = document.getElementById(inputId);
+    const preview = document.getElementById(previewId);
+    const text = document.getElementById(textId);
+    const icon = document.getElementById(iconId);
+
+    if (!input || !preview || !text || !icon) return;
 
     input.addEventListener("change", () => {
+
         if (input.files.length > 0) {
+
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                preview.src = e.target.result;
+                preview.style.display = "block";
+
+                icon.style.display = "none";
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+
             text.innerText = input.files[0].name;
+
         } else {
+
+            preview.style.display = "none";
+            preview.src = "";
+
+            icon.style.display = "block";
+
             text.innerText = defaultText;
+
         }
+
     });
+
 }
 
-updateFileName("photo", "photoText", "Upload Photo");
-updateFileName("documentFront", "frontText", "Upload Front");
-updateFileName("documentBack", "backText", "Upload Back");
+updatePreview(
+    "photo",
+    "photoPreview",
+    "photoText",
+    "photoIcon",
+    "Upload Photo"
+);
+
+updatePreview(
+    "documentFront",
+    "frontPreview",
+    "frontText",
+    "frontIcon",
+    "Upload Front"
+);
+
+updatePreview(
+    "documentBack",
+    "backPreview",
+    "backText",
+    "backIcon",
+    "Upload Back"
+);
 
 
 /*=========================================
@@ -180,6 +167,7 @@ if (donationForm) {
             alert("Donation form submitted successfully!");
 
             donationForm.reset();
+            previewReset();
 
             document.getElementById("photoText").innerText = "Upload Photo";
             document.getElementById("frontText").innerText = "Upload Front";
@@ -201,6 +189,45 @@ if (donationForm) {
             submitBtn.innerText = "Donate Now";
 
         }
+
+    });
+
+}
+
+/*=========================================
+        RESET IMAGE PREVIEW
+=========================================*/
+
+function previewReset() {
+
+    [
+        {
+            preview: "photoPreview",
+            icon: "photoIcon",
+            text: "photoText",
+            defaultText: "Upload Photo"
+        },
+        {
+            preview: "frontPreview",
+            icon: "frontIcon",
+            text: "frontText",
+            defaultText: "Upload Front"
+        },
+        {
+            preview: "backPreview",
+            icon: "backIcon",
+            text: "backText",
+            defaultText: "Upload Back"
+        }
+
+    ].forEach(item => {
+
+        document.getElementById(item.preview).style.display = "none";
+        document.getElementById(item.preview).src = "";
+
+        document.getElementById(item.icon).style.display = "block";
+
+        document.getElementById(item.text).innerText = item.defaultText;
 
     });
 

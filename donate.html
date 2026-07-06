@@ -262,14 +262,29 @@
                         <textarea id="address" name="address" placeholder="Enter Address"></textarea>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>Photo (Optional)</label>
                         <label for="photo" class="upload-box-small">
                             <i class="fas fa-plus"></i>
                             <p id="photoText">Upload Photo</p>
                         </label>
                         <input type="file" id="photo" name="photo" accept="image/*" hidden>
-                    </div>
+                    </div> -->
+
+
+                    <label for="photo" class="upload-box-small">
+
+    <img id="photoPreview" class="upload-preview" style="display:none;">
+
+    <i class="fas fa-plus" id="photoIcon"></i>
+
+    <p id="photoText">Upload Photo</p>
+
+</label>
+
+<input type="file" id="photo" accept="image/*" hidden>
+
+
 
                     <div class="form-group">
                         <label>Donation Amount <span>*</span></label>
@@ -293,23 +308,53 @@
                         <input type="text" id="documentNumber" name="documentNumber" placeholder="Enter Document Number">
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>Document Front</label>
                         <label for="documentFront" class="upload-box-small">
                             <i class="fas fa-plus"></i>
                             <p id="frontText">Upload Front</p>
                         </label>
                         <input type="file" id="documentFront" name="documentFront" accept="image/*" hidden>
-                    </div>
+                    </div> -->
 
-                    <div class="form-group">
+
+                    <label for="documentFront" class="upload-box-small">
+
+    <img id="frontPreview" class="upload-preview" style="display:none;">
+
+    <i class="fas fa-plus" id="frontIcon"></i>
+
+    <p id="frontText">Upload Front</p>
+
+</label>
+
+<input type="file" id="documentFront" accept="image/*" hidden>
+
+
+
+                    <!-- <div class="form-group">
                         <label>Document Back</label>
                         <label for="documentBack" class="upload-box-small">
                             <i class="fas fa-plus"></i>
                             <p id="backText">Upload Back</p>
                         </label>
                         <input type="file" id="documentBack" name="documentBack" accept="image/*" hidden>
-                    </div>
+                    </div> -->
+
+                    <label for="documentBack" class="upload-box-small">
+
+    <img id="backPreview" class="upload-preview" style="display:none;">
+
+    <i class="fas fa-plus" id="backIcon"></i>
+
+    <p id="backText">Upload Back</p>
+
+</label>
+
+<input type="file" id="documentBack" accept="image/*" hidden>
+
+
+
 
                     <button type="submit" class="donate-btn">
                         Donate Now

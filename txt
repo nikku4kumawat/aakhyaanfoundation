@@ -134,16 +134,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <section class="donation-section">
 
     <div class="donation-container">
@@ -390,3 +380,1441 @@
     </div>
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- SEO META TAGS -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate | Aakhyaan Foundation</title>
+<meta name="description" content="Aakhyaan Foundation empowers senior citizens through participation, dignity, healthcare, education, advocacy, social accountability, and inclusive community development across India.">
+<meta name="keywords" content="Aakhyaan Foundation, Senior Citizens, Elder Care, Healthy Ageing, Participation, Dignity, Healthcare, Education, Social Accountability, Inclusive Development, Community Development, Elder Rights, Rajasthan, India">
+<meta name="author" content="Aakhyaan Foundation">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B7A5C">
+<link rel="canonical" href="https://aakhyaanfoundation.org/">
+
+<!-- FAVICON -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<!-- OPEN GRAPH -->
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="Aakhyaan Foundation">
+<meta property="og:title" content="Aakhyaan Foundation | Empowering Senior Citizens Through Participation & Dignity">
+<meta property="og:description" content="Aakhyaan Foundation empowers senior citizens through participation, dignity, healthcare, education, advocacy, and inclusive community development.">
+<meta property="og:url" content="https://aakhyaanfoundation.org/">
+<meta property="og:image" content="https://aakhyaanfoundation.org/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- TWITTER CARD -->
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aakhyaan Foundation | Empowering Senior Citizens">
+<meta name="twitter:description" content="Participation, dignity, healthcare, education and inclusive community development for senior citizens.">
+<meta name="twitter:image" content="https://aakhyaanfoundation.org/img/og-image.jpg">
+
+<!-- PRECONNECT -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+<!-- STRUCTURED DATA (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aakhyaan Foundation",
+  "url": "https://aakhyaanfoundation.org/",
+  "logo": "https://aakhyaanfoundation.org/img/logo.png",
+  "image": "https://aakhyaanfoundation.org/img/og-image.jpg",
+  "description": "Aakhyaan Foundation is dedicated to empowering senior citizens through participation, dignity, healthcare, education, advocacy, social accountability and inclusive community development.",
+  "email": "connect@aakhyaanfoundation.org",
+  "telephone": "+91-8239707266",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "S-3 Shiv Dham, Shiv Nagar-A, Jhotwara",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "postalCode": "302012",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.facebook.com/",
+    "https://www.instagram.com/",
+    "https://www.linkedin.com/",
+    "https://x.com/"
+  ]
+}
+</script>   
+
+    <!-- Font Awesome -->
+     <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/donate.css">
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    
+<!-- ==========================================
+            DONATION SECTION START
+=========================================== -->
+
+<!-- <section class="donation-section">
+    <div class="donation-container">
+        <div class="donation-wrapper">
+
+            <div class="donation-form">
+                <div class="donation-title">
+                    <p>You can make your donation through this form.</p>
+                </div>
+
+                <form id="donationForm" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number <span>*</span></label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label>PAN Card Number</label>
+                        <input type="text" id="panNumber" name="panNumber" placeholder="Enter PAN Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address <span>*</span></label>
+                        <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Photo (Optional)</label>
+                        <div class="upload-box-small">
+                            <i class="fas fa-plus"></i>
+                            <p>Upload Photo</p>
+                            <input type="file" id="photo" name="photo" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Donation Amount <span>*</span></label>
+                        <input type="number" id="donationAmount" name="donationAmount" placeholder="₹ Enter Amount">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Document Type <span>*</span></label>
+                        <select id="documentType" name="documentType">
+                            <option value="">Select Document</option>
+                            <option value="Aadhar Card">Aadhar Card</option>
+                            <option value="PAN Card">PAN Card</option>
+                            <option value="Driving Licence">Driving Licence</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Voter ID">Voter ID</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Document Number <span>*</span></label>
+                        <input type="text" id="documentNumber" name="documentNumber" placeholder="Enter Document Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Document Front</label>
+                        <div class="upload-box-small">
+                            <i class="fas fa-plus"></i>
+                            <p>Upload Front</p>
+                            <input type="file" id="documentFront" name="documentFront" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Document Back</label>
+                        <div class="upload-box-small">
+                            <i class="fas fa-plus"></i>
+                            <p>Upload Back</p>
+                            <input type="file" id="documentBack" name="documentBack" accept="image/*">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="donate-btn">
+                        Donate Now
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="donation-upload">
+                <div class="donation-card">
+
+                    <div class="donation-card-top">
+                        <div class="donation-card-top">
+                            <div class="upi-row">
+                                <span>Name :</span>
+                                <strong>Aakhyaan Foundation</strong>
+                            </div>
+                            <div class="upi-row">
+                                <span>UPI ID :</span>
+                                <strong>9001123836@sbi</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="donation-card-body">
+                        <img src="img/donation.jpeg" class="qr-image" alt="QR Code">
+
+                        <div class="upi-apps">
+                            <img src="img/gpay.png" alt="Google Pay">
+                            <img src="img/phonepe.png" alt="PhonePe">
+                            <img src="img/paytm.png" alt="Paytm">
+                        </div>
+                    </div>
+
+                    <div class="donation-card-footer">
+                        Thank you for your support!
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<section class="donation-section">
+    <div class="donation-container">
+        <div class="donation-wrapper">
+
+            <div class="donation-form">
+                <div class="donation-title">
+                    <p>You can make your donation through this form.</p>
+                </div>
+
+                <form id="donationForm" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Number <span>*</span></label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label>PAN Card Number</label>
+                        <input type="text" id="panNumber" name="panNumber" placeholder="Enter PAN Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address <span>*</span></label>
+                        <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Photo (Optional)</label>
+                        <label for="photo" class="upload-box-small">
+                            <i class="fas fa-plus"></i>
+                            <p id="photoText">Upload Photo</p>
+                        </label>
+                        <input type="file" id="photo" name="photo" accept="image/*" hidden>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Donation Amount <span>*</span></label>
+                        <input type="number" id="donationAmount" name="donationAmount" placeholder="₹ Enter Amount">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Document Type <span>*</span></label>
+                        <select id="documentType" name="documentType">
+                            <option value="">Select Document</option>
+                            <option value="Aadhar Card">Aadhar Card</option>
+                            <option value="PAN Card">PAN Card</option>
+                            <option value="Driving Licence">Driving Licence</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Voter ID">Voter ID</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Document Number <span>*</span></label>
+                        <input type="text" id="documentNumber" name="documentNumber" placeholder="Enter Document Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Document Front</label>
+                        <label for="documentFront" class="upload-box-small">
+                            <i class="fas fa-plus"></i>
+                            <p id="frontText">Upload Front</p>
+                        </label>
+                        <input type="file" id="documentFront" name="documentFront" accept="image/*" hidden>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Document Back</label>
+                        <label for="documentBack" class="upload-box-small">
+                            <i class="fas fa-plus"></i>
+                            <p id="backText">Upload Back</p>
+                        </label>
+                        <input type="file" id="documentBack" name="documentBack" accept="image/*" hidden>
+                    </div>
+
+                    <button type="submit" class="donate-btn">
+                        Donate Now
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="donation-upload">
+                <div class="donation-card">
+
+                    <div class="donation-card-top">
+                        <div class="upi-row">
+                            <span>Name :</span>
+                            <strong>Aakhyaan Foundation</strong>
+                        </div>
+                        <div class="upi-row">
+                            <span>UPI ID :</span>
+                            <strong>9001123836@sbi</strong>
+                        </div>
+                    </div>
+
+                    <div class="donation-card-body">
+                        <img src="img/donation.jpeg" class="qr-image" alt="QR Code">
+
+                        <div class="upi-apps">
+                            <img src="img/gpay.png" alt="Google Pay">
+                            <img src="img/phonepe.png" alt="PhonePe">
+                            <img src="img/paytm.png" alt="Paytm">
+                        </div>
+                    </div>
+
+                    <div class="donation-card-footer">
+                        Thank you for your support!
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ==========================================
+            DONATION SECTION END
+=========================================== -->
+
+
+<div id="footer"></div>
+
+    <!-- JS -->
+    <script src="config.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    
+
+</body>
+
+</html>
+
+
+
+
+
+// const donationForm = document.getElementById("donationForm");
+
+// if (donationForm) {
+//   donationForm.addEventListener("submit", async (e) => {
+//     e.preventDefault();
+
+//     const submitBtn = donationForm.querySelector(".donate-btn");
+
+//     submitBtn.disabled = true;
+//     submitBtn.innerText = "Submitting...";
+
+//     try {
+//       const formData = new FormData();
+
+//       formData.append("fullName", document.getElementById("fullName").value.trim());
+//       formData.append("mobile", document.getElementById("mobile").value.trim());
+//       formData.append("email", document.getElementById("email").value.trim());
+//       formData.append("panNumber", document.getElementById("panNumber").value.trim());
+//       formData.append("address", document.getElementById("address").value.trim());
+//       formData.append("donationAmount", document.getElementById("donationAmount").value);
+//       formData.append("documentType", document.getElementById("documentType").value);
+//       formData.append("documentNumber", document.getElementById("documentNumber").value.trim());
+
+//       const photo = document.getElementById("photo").files[0];
+//       const documentFront = document.getElementById("documentFront").files[0];
+//       const documentBack = document.getElementById("documentBack").files[0];
+
+//       if (photo) formData.append("photo", photo);
+//       if (documentFront) formData.append("documentFront", documentFront);
+//       if (documentBack) formData.append("documentBack", documentBack);
+
+//       const response = await fetch(API_PATHS.DONATE, {
+//         method: "POST",
+//         body: formData,
+//       });
+
+//       const data = await response.json();
+
+//       if (!response.ok) {
+//         alert(data.message || "Something went wrong");
+//         return;
+//       }
+
+//       alert("Donation form submitted successfully!");
+//       donationForm.reset();
+
+//     } catch (error) {
+//       console.log("DONATION FORM ERROR:", error);
+//       alert("Server error. Please try again.");
+//     } finally {
+//       submitBtn.disabled = false;
+//       submitBtn.innerText = "Donate Now";
+//     }
+//   });
+// }
+
+
+
+
+
+
+const donationForm = document.getElementById("donationForm");
+
+/*=========================================
+        SHOW SELECTED FILE NAME
+=========================================*/
+
+function updateFileName(inputId, textId, defaultText) {
+    const input = document.getElementById(inputId);
+    const text = document.getElementById(textId);
+
+    if (!input || !text) return;
+
+    input.addEventListener("change", () => {
+        if (input.files.length > 0) {
+            text.innerText = input.files[0].name;
+        } else {
+            text.innerText = defaultText;
+        }
+    });
+}
+
+updateFileName("photo", "photoText", "Upload Photo");
+updateFileName("documentFront", "frontText", "Upload Front");
+updateFileName("documentBack", "backText", "Upload Back");
+
+
+/*=========================================
+            DONATION FORM
+=========================================*/
+
+if (donationForm) {
+
+    donationForm.addEventListener("submit", async (e) => {
+
+        e.preventDefault();
+
+        const submitBtn = donationForm.querySelector(".donate-btn");
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Submitting...";
+
+        try {
+
+            const fullName = document.getElementById("fullName").value.trim();
+            const mobile = document.getElementById("mobile").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const panNumber = document.getElementById("panNumber").value.trim();
+            const address = document.getElementById("address").value.trim();
+            const donationAmount = document.getElementById("donationAmount").value;
+            const documentType = document.getElementById("documentType").value;
+            const documentNumber = document.getElementById("documentNumber").value.trim();
+
+            /*=========================
+                    VALIDATION
+            =========================*/
+
+            if (
+                !fullName ||
+                !mobile ||
+                !address ||
+                !donationAmount ||
+                !documentType ||
+                !documentNumber
+            ) {
+                alert("Please fill all required fields.");
+
+                submitBtn.disabled = false;
+                submitBtn.innerText = "Donate Now";
+
+                return;
+            }
+
+            /*=========================
+                    FORM DATA
+            =========================*/
+
+            const formData = new FormData();
+
+            formData.append("fullName", fullName);
+            formData.append("mobile", mobile);
+            formData.append("email", email);
+            formData.append("panNumber", panNumber);
+            formData.append("address", address);
+            formData.append("donationAmount", donationAmount);
+            formData.append("documentType", documentType);
+            formData.append("documentNumber", documentNumber);
+
+            const photo = document.getElementById("photo").files[0];
+            const documentFront = document.getElementById("documentFront").files[0];
+            const documentBack = document.getElementById("documentBack").files[0];
+
+            if (photo) {
+                formData.append("photo", photo);
+            }
+
+            if (documentFront) {
+                formData.append("documentFront", documentFront);
+            }
+
+            if (documentBack) {
+                formData.append("documentBack", documentBack);
+            }
+
+            /*=========================
+                SEND TO BACKEND
+            =========================*/
+
+            const response = await fetch(API_PATHS.DONATE, {
+                method: "POST",
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.message || "Something went wrong");
+            }
+
+            alert("Donation form submitted successfully!");
+
+            donationForm.reset();
+
+            document.getElementById("photoText").innerText = "Upload Photo";
+            document.getElementById("frontText").innerText = "Upload Front";
+            document.getElementById("backText").innerText = "Upload Back";
+
+        }
+
+        catch (error) {
+
+            console.error("DONATION ERROR :", error);
+
+            alert(error.message || "Server Error. Please try again.");
+
+        }
+
+        finally {
+
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Donate Now";
+
+        }
+
+    });
+
+}
+
+
+
+
+
+
+
+
+/*==================================================
+                DONATION SECTION
+==================================================*/
+
+.donation-section{
+    width:100%;
+    padding:60px 0;
+    background:#f4f9fc;
+}
+
+.donation-container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/*==================================================
+                WRAPPER
+==================================================*/
+
+.donation-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:35px;
+}
+
+/*==================================================
+                LEFT FORM
+==================================================*/
+
+.donation-form{
+    flex:1;
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    height:760px;
+    overflow-y:auto;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border-right:5px solid #008ad0;
+    border-right:none;
+}
+
+/*==================================================
+                SCROLLBAR
+==================================================*/
+
+.donation-form::-webkit-scrollbar{
+    width:4px;
+}
+
+.donation-form::-webkit-scrollbar-track{
+    background:#ececec;
+    border-radius:20px;
+}
+
+.donation-form::-webkit-scrollbar-thumb{
+    background:#008ad0;
+    border-radius:20px;
+}
+
+/*==================================================
+                TITLE
+==================================================*/
+
+.donation-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.donation-title p{
+    font-size:28px;
+    color:#008ad0;
+    font-weight:700;
+}
+
+/*==================================================
+                FORM GRID
+==================================================*/
+
+.donation-form form{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.full-width{
+    grid-column:1/-1;
+}
+
+
+/*==================================================
+                FORM GROUP
+==================================================*/
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    font-size:15px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:10px;
+    letter-spacing:.3px;
+}
+
+.form-group label span{
+    color:#ff3b30;
+}
+
+/*==================================================
+                INPUT
+==================================================*/
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+    padding:15px 18px;
+
+    border:1px solid #d9d9d9;
+
+    border-radius:10px;
+
+    outline:none;
+
+    background:#fff;
+
+    font-size:15px;
+
+    color:#333;
+
+    transition:.35s;
+
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color:#9b9b9b;
+
+}
+
+.form-group textarea{
+
+    resize:none;
+
+    height:170px;
+
+}
+
+.form-group select{
+
+    cursor:pointer;
+
+}
+
+/*==================================================
+                FOCUS
+==================================================*/
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    border-color:#008ad0;
+
+    box-shadow:0 0 8px rgba(0,138,208,.18);
+
+}
+
+/*==================================================
+            SMALL UPLOAD BOX
+==================================================*/
+
+.upload-box-small{
+
+    width:180px;
+
+    height:180px;
+
+    border:2px dashed #cfcfcf;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    background:#fafafa;
+
+}
+
+.upload-box-small:hover{
+
+    border-color:#008ad0;
+
+    background:#f2fbff;
+
+}
+
+.upload-box-small i{
+
+    font-size:42px;
+
+    color:#008ad0;
+
+    margin-bottom:15px;
+
+}
+
+.upload-box-small p{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.upload-box-small input{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    cursor:pointer;
+
+}
+
+/*==================================================
+                DONATE BUTTON
+==================================================*/
+
+.donate-btn{
+
+    grid-column:1/-1;
+
+    width:100%;
+
+    padding:17px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#008ad0;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    margin-top:10px;
+
+}
+
+.donate-btn:hover{
+
+    background:#006fa8;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,138,208,.25);
+
+}
+
+
+/*==================================================
+                RIGHT SIDE
+==================================================*/
+
+.donation-upload{
+    width:360px;
+    flex-shrink:0;
+    position:sticky;
+    top:100px;
+}
+
+/*==================================================
+                DONATION CARD
+==================================================*/
+
+.donation-card{
+
+    width:100%;
+    height:auto;
+    background:#fff;
+
+    border:3px solid #008ad0;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.donation-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+/*==================================================
+                CARD TOP
+==================================================*/
+
+.donation-card-top{
+
+    padding:20px;
+
+    border-bottom:none;
+
+    /* border-bottom:2px solid #008ad0; */
+
+    background:#fff;
+
+}
+
+/*==============================
+        NAME & UPI
+==============================*/
+
+.upi-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+}
+
+.upi-row:last-child{
+
+    margin-bottom:0;
+
+}
+
+.upi-row span{
+
+    color:#008ad0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    min-width:85px;
+
+}
+
+.upi-row strong{
+
+    color:#000;
+    white-space:nowrap;
+
+    font-size:18px;
+
+    font-weight:700;
+
+
+}
+
+/*==================================================
+                CARD BODY
+==================================================*/
+
+.donation-card-body{
+
+    padding:30px 20px;
+
+    text-align:center;
+
+}
+
+.donation-card-body h3{
+
+    font-size:26px;
+
+    color:#333;
+
+    font-weight:600;
+
+    line-height:1.4;
+
+    margin-bottom:25px;
+
+}
+
+/*==================================================
+                QR IMAGE
+==================================================*/
+
+.qr-image{
+
+    width:260px;
+
+    max-width:100%;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/*==================================================
+                UPI APPS
+==================================================*/
+
+.upi-apps{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.upi-apps img{
+
+    height:36px;
+
+    width:auto;
+
+    object-fit:contain;
+
+    transition:.3s;
+
+}
+
+.upi-apps img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*==================================================
+                FOOTER
+==================================================*/
+
+.donation-card-footer{
+
+    background:#008ad0;
+
+    color:#fff;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    padding:18px;
+
+    letter-spacing:.3px;
+
+}
+
+
+/*==================================================
+                LARGE LAPTOP
+==================================================*/
+
+@media (max-width:1400px){
+
+    .donation-container{
+        width:95%;
+    }
+
+    .donation-upload{
+        width:340px;
+    }
+
+    .donation-form{
+        height:720px;
+    }
+
+    .qr-image{
+        width:240px;
+    }
+
+}
+
+
+/*==================================================
+                    LAPTOP
+==================================================*/
+
+@media (max-width:1200px){
+
+    .donation-wrapper{
+        gap:25px;
+    }
+
+    .donation-upload{
+        width:320px;
+    }
+
+    .donation-form{
+        padding:30px;
+        height:700px;
+    }
+
+    .donation-title p{
+        font-size:24px;
+    }
+
+    .donation-card-body h3{
+        font-size:22px;
+    }
+
+    .qr-image{
+        width:220px;
+    }
+
+}
+
+
+/*==================================================
+                    TABLET
+==================================================*/
+
+@media (max-width:991px){
+
+    .donation-wrapper{
+        flex-direction:column;
+    }
+
+    .donation-form{
+        width:100%;
+        order:2;
+        height:auto;
+        overflow:visible;
+    }
+
+    .donation-upload{
+        width:100%;
+        order:1;
+        position:relative;
+        top:0;
+    }
+
+    .donation-card{
+        max-width:500px;
+        margin:auto;
+    }
+
+    .donation-form form{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+/*==================================================
+                SMALL TABLET
+==================================================*/
+
+@media (max-width:768px){
+
+    .donation-section{
+        padding:50px 0;
+    }
+
+    .donation-form{
+        padding:25px;
+    }
+
+    .donation-title{
+        margin-bottom:25px;
+    }
+
+    .donation-title p{
+        font-size:22px;
+    }
+
+    .donation-form form{
+        grid-template-columns:1fr;
+    }
+
+    .full-width{
+        grid-column:auto;
+    }
+
+    .upload-box-small{
+        width:100%;
+        max-width:200px;
+        height:170px;
+    }
+
+    .upi-row{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .upi-row strong{
+        text-align:center;
+    }
+
+    .donation-card-body{
+        padding:25px;
+    }
+
+    .donation-card-body h3{
+        font-size:22px;
+    }
+
+    .qr-image{
+        width:210px;
+    }
+
+    .upi-apps{
+        gap:15px;
+    }
+
+    .upi-apps img{
+        height:32px;
+    }
+
+    .donation-card-footer{
+        font-size:18px;
+    }
+
+}
+
+
+/*==================================================
+                    MOBILE
+==================================================*/
+
+@media (max-width:576px){
+
+    .donation-section{
+        padding:40px 0;
+    }
+
+    .donation-container{
+        width:92%;
+    }
+
+    .donation-form{
+        padding:20px;
+    }
+
+    .donation-title p{
+        font-size:18px;
+    }
+
+    .form-group label{
+        font-size:14px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select{
+        font-size:14px;
+        padding:13px;
+    }
+
+    .form-group textarea{
+        height:120px;
+    }
+
+    .upload-box-small{
+        max-width:180px;
+        height:150px;
+    }
+
+    .upload-box-small i{
+        font-size:34px;
+    }
+
+    .upload-box-small p{
+        font-size:13px;
+    }
+
+    .donate-btn{
+        font-size:15px;
+        padding:15px;
+    }
+
+    .donation-card-top{
+        padding:20px;
+    }
+
+    .upi-row span{
+        font-size:17px;
+    }
+
+    .upi-row strong{
+        font-size:15px;
+    }
+
+    .donation-card-body h3{
+        font-size:20px;
+    }
+
+    .qr-image{
+        width:180px;
+    }
+
+    .upi-apps img{
+        height:28px;
+    }
+
+    .donation-card-footer{
+        font-size:16px;
+        padding:15px;
+    }
+
+}
+
+
+/*==================================================
+                VERY SMALL MOBILE
+==================================================*/
+
+@media (max-width:400px){
+
+    .donation-container{
+        width:95%;
+    }
+
+    .donation-form{
+        padding:15px;
+    }
+
+    .donation-title p{
+        font-size:16px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select{
+        font-size:13px;
+        padding:12px;
+    }
+
+    .upload-box-small{
+        max-width:160px;
+        height:135px;
+    }
+
+    .upload-box-small i{
+        font-size:30px;
+    }
+
+    .upload-box-small p{
+        font-size:12px;
+    }
+
+    .donate-btn{
+        font-size:14px;
+    }
+
+    .upi-row span{
+        font-size:16px;
+    }
+
+    .upi-row strong{
+        font-size:14px;
+    }
+
+    .donation-card-body h3{
+        font-size:18px;
+    }
+
+    .qr-image{
+        width:160px;
+    }
+
+    .upi-apps{
+        gap:10px;
+    }
+
+    .upi-apps img{
+        height:24px;
+    }
+
+    .donation-card-footer{
+        font-size:14px;
+        padding:14px;
+    }
+
+}
+
+
+

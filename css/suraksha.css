@@ -203,6 +203,8 @@
     border-right:1px solid var(--border);
 
     transition:.35s ease;
+    background-color: #fff;
+    border-radius: 12px;
 
 }
 

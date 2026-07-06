@@ -160,9 +160,10 @@ header.innerHTML += `
 
                             <ul class="submenu-2">
 
-                                <li><a href="shiksha.html">SHIKSHA</a></li>
-                                <li><a href="swasthya.html">SWASTHYA</a></li>
-                                <li><a href="suraksha.html">SURAKSHA</a></li>
+                                <li><a href="shiksha.html">EDUCATION</a></li>
+                                <li><a href="swasthya.html">HEALTH</a></li>
+                                <li><a href="suraksha.html">PROTECTION</a></li>
+                                <li><a href="gender-justice.html">GENDER JUSTICE</a></li>
                                 <li><a href="target-group.html">TARGET GROUP</a></li>
                                 <li><a href="focus-area.html">FOCUS AREA</a></li>
                                 <li><a href="internship.html">INTERNSHIP</a></li>
@@ -336,9 +337,10 @@ header.innerHTML += `
 
                     <ul class="mobile-submenu">
 
-                        <li><a href="shiksha.html">SHIKSHA</a></li>
-                        <li><a href="swasthya.html">SWASTHYA</a></li>
-                        <li><a href="suraksha.html">SURAKSHA</a></li>
+                        <li><a href="shiksha.html">EDUCATION</a></li>
+                        <li><a href="swasthya.html">HEALTH</a></li>
+                        <li><a href="suraksha.html">PROTECTION</a></li>
+                        <li><a href="gender-justice.html">GENDER JUSTICE</a></li>
                         <li><a href="target-group.html">TARGET GROUP</a></li>
                         <li><a href="focus-area.html">FOCUS AREA</a></li>
                         <li><a href="internship.html">INTERNSHIP</a></li>

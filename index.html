@@ -372,7 +372,7 @@
                 towards positive social change.
             </p>
 
-            <div class="about-boxes">
+            <!-- <div class="about-boxes">
 
                 <div class="about-box">
                     <i class="fas fa-users"></i>
@@ -389,7 +389,104 @@
                     <h4>Impact</h4>
                 </div>
 
-            </div>
+            </div> -->
+
+
+<!--=========================
+      ABOUT CIRCLE CARDS
+==========================-->
+
+<div class="about-circle-wrapper">
+
+    <!-- SVG LINE -->
+   <svg class="about-svg" viewBox="0 0 1200 320" preserveAspectRatio="none">
+
+    <!-- Dotted Path -->
+    <path id="aboutPath"
+        d="M40 110
+           C120 110 120 250 250 250
+           C380 250 380 -30 600 -30
+           C820 -30 820 250 1040 250
+           C1140 250 1140 110 1180 110"
+        fill="none"
+        stroke="#9aa3b2"
+        stroke-width="5"
+        stroke-linecap="round"
+        stroke-dasharray="12 14" />
+
+    <!-- Animated Solid Line -->
+    <path id="aboutProgress"
+        d="M40 110
+           C120 110 120 250 250 250
+           C380 250 380 -30 600 -30
+           C820 -30 820 250 1040 250
+           C1140 250 1140 110 1180 110"
+        fill="none"
+        stroke="#000"
+        stroke-width="5"
+        stroke-linecap="round" />
+
+    <!-- Moving Dot -->
+    <circle
+        id="movingDot"
+        cx="40"
+        cy="110"
+        r="10"
+        fill="#111"/>
+
+</svg>
+
+    <!-- Circle 1 -->
+    <div class="circle-card circle-one">
+
+        <div class="circle-inner">
+
+            <i class="fas fa-users"></i>
+
+            <h4>Inclusion</h4>
+
+        </div>
+
+    </div>
+
+    <!-- Circle 2 -->
+    <div class="circle-card circle-two">
+
+        <div class="circle-inner">
+
+            <i class="fas fa-lightbulb"></i>
+
+            <h4>Innovation</h4>
+
+        </div>
+
+    </div>
+
+    <!-- Circle 3 -->
+    <div class="circle-card circle-three">
+
+        <div class="circle-inner">
+
+            <i class="fas fa-file-alt"></i>
+
+            <h4>Impact</h4>
+
+        </div>
+
+    </div>
+
+    <!-- Fixed Dots -->
+
+    <span class="path-dot dot-start"></span>
+
+    <span class="path-dot dot-middle-one"></span>
+
+    <span class="path-dot dot-middle-two"></span>
+
+    <span class="path-dot dot-end"></span>
+
+</div>
+
 
             <a href="contact.html" class="about-btn">
                 Learn More

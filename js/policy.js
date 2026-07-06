@@ -3,6 +3,10 @@ const policyPublicPdfModal = document.getElementById("policyPublicPdfModal");
 const policyPublicPdfFrame = document.getElementById("policyPublicPdfFrame");
 const policyPublicModalClose = document.getElementById("policyPublicModalClose");
 
+function removePdfExtension(fileName) {
+  return fileName.replace(/\.pdf$/i, "");
+}
+
 function getPolicyPublicPdfUrl(filePath) {
   if (!filePath) return "";
 
@@ -66,7 +70,7 @@ function renderPublicPolicyDocuments(documents) {
           <i class="fa-solid fa-file-pdf"></i>
         </div>
 
-        <h3 class="document-name">${pdf.name || "Policy Document"}</h3>
+        <h3 class="document-name">${removePdfExtension(pdf.name || "Policy Document")}</h3>
 
         <div class="document-actions">
           <button class="document-action-btn document-view-btn" title="View PDF">

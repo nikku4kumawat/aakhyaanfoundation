@@ -3,6 +3,10 @@ const auditDocumentPdfModal = document.getElementById("auditDocumentPdfModal");
 const auditDocumentPdfFrame = document.getElementById("auditDocumentPdfFrame");
 const auditDocumentModalClose = document.getElementById("auditDocumentModalClose");
 
+function removePdfExtension(fileName) {
+  return fileName.replace(/\.pdf$/i, "");
+}
+
 function getAuditPdfUrl(filePath) {
   if (!filePath) return "";
 
@@ -65,7 +69,7 @@ function renderAuditDocuments(documents) {
           <i class="fa-solid fa-file-pdf"></i>
         </div>
 
-        <h3 class="document-name">${pdf.name || "Audit Document"}</h3>
+        <h3 class="document-name">${removePdfExtension(pdf.name || "Audit Document")}</h3>
 
         <div class="document-actions">
           <button class="document-action-btn document-view-btn" title="View PDF">

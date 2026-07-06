@@ -3,6 +3,10 @@ const documentPdfModal = document.getElementById("documentPdfModal");
 const documentPdfFrame = document.getElementById("documentPdfFrame");
 const documentModalClose = document.getElementById("documentModalClose");
 
+function removePdfExtension(fileName) {
+  return fileName.replace(/\.pdf$/i, "");
+}
+
 function getPdfUrl(filePath) {
   if (!filePath) return "";
 
@@ -65,7 +69,7 @@ function renderDocuments(documents) {
           <i class="fa-solid fa-file-pdf"></i>
         </div>
 
-        <h3 class="document-name">${pdf.name || "Report Document"}</h3>
+        <h3 class="document-name">${removePdfExtension(pdf.name || "Report Document")}</h3>
 
         <div class="document-actions">
           <button class="document-action-btn document-view-btn" title="View PDF">

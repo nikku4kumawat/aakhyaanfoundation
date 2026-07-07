@@ -39,6 +39,13 @@ function previewImage(inputId){
             reader.readAsDataURL(file);
 
         }
+        else{
+
+            img.style.display="none";
+
+            placeholder.style.display="flex";
+
+        }
 
     });
 

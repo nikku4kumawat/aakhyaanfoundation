@@ -15,9 +15,9 @@ header.innerHTML = `
 
             <a href="https://maps.app.goo.gl/7zK1nSQX6dZKrBKd9" target="_blank">
                 <i class="fas fa-location-dot"></i>
-                JHOTWARA JAIPUR
+                22 Godam, Jaipur
             </a>
-
+          
             <a href="tel:+919001123836">
                 <i class="fas fa-phone"></i>
                 +91 9001123836

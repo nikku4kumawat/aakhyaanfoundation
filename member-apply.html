@@ -503,12 +503,41 @@
     </div>
 
     <div class="upload-right">
-      <label for="profileImage" class="upload-box">
+      <!-- <label for="profileImage" class="upload-box">
         <div class="upload-icon"><i class="fas fa-plus"></i></div>
         <h5>Upload</h5>
         <small>JPG, PNG</small>
       </label>
-      <input type="file" id="profileImage" name="profileImage" accept="image/*" hidden>
+      <input type="file" id="profileImage" name="profileImage" accept="image/*" hidden> -->
+
+
+      <label for="profileImage" class="upload-box">
+
+    <img class="upload-preview" style="display:none;">
+
+    <div class="upload-placeholder">
+
+        <div class="upload-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <h5>Upload</h5>
+
+        <small>JPG, PNG</small>
+
+    </div>
+
+    <span class="file-name"></span>
+
+</label>
+
+<input
+type="file"
+id="profileImage"
+name="profileImage"
+accept="image/*"
+hidden>
+
 
     </div>
   </div>
@@ -528,11 +557,31 @@
     </div>
 
     <div class="upload-right">
-      <label for="idUpload" class="upload-box">
+      <!-- <label for="idUpload" class="upload-box">
         <div class="upload-icon"><i class="fas fa-plus"></i></div>
         <h5>Upload</h5>
         <small>ID Proof</small>
-      </label>
+      </label> -->
+
+      <label for="idUpload" class="upload-box">
+
+    <img class="upload-preview" style="display:none;">
+
+    <div class="upload-placeholder">
+
+        <div class="upload-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <h5>Upload</h5>
+
+        <small>ID Proof</small>
+
+    </div>
+
+    <span class="file-name"></span>
+
+</label>
       <input type="file" id="idUpload" name="idUpload" accept="image/*,.pdf" hidden>
     </div>
   </div>
@@ -543,11 +592,32 @@
     </div>
 
     <div class="upload-right">
-      <label for="otherUpload" class="upload-box">
+      <!-- <label for="otherUpload" class="upload-box">
         <div class="upload-icon"><i class="fas fa-plus"></i></div>
         <h5>Upload</h5>
         <small>Other Document</small>
-      </label>
+      </label> -->
+
+      <label for="otherUpload" class="upload-box">
+
+    <img class="upload-preview" style="display:none;">
+
+    <div class="upload-placeholder">
+
+        <div class="upload-icon">
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <h5>Upload</h5>
+
+        <small>Other Document</small>
+
+    </div>
+
+    <span class="file-name"></span>
+
+</label>
+
       <input type="file" id="otherUpload" name="otherUpload" accept="image/*,.pdf" hidden>
     </div>
   </div>

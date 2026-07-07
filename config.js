@@ -10,5 +10,6 @@ const API_PATHS = {
   UPCOMING_EVENT: `${BASE_URL}/api/upcoming-events`,
   DONORS: `${BASE_URL}/api/donors`,
   POLICY_DOCUMENTS: `${BASE_URL}/api/policy-documents`,
-  DONATE: `${BASE_URL}/api/donate`
+  DONATE: `${BASE_URL}/api/donate`,
+  MEMBERS: `${BASE_URL}/api/members`
 };
